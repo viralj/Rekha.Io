@@ -1,0 +1,29 @@
+{% spaceless %}<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ title }}</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        {% block head %}{% endblock %}
+        {% block head_js %}{% endblock %}
+    </head>
+    <body>
+        <header>
+            {% block header %}{% endblock %}
+        </header>
+
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer class="page-footer">
+            {% block footer %}{% endblock %}
+        </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    {% block footer_js %}{% endblock %}
+    </body>
+    </html>
+{% endspaceless %}
