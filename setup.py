@@ -29,7 +29,7 @@ setup(
     version='1.0.0',
     description='Rekha.Io : Open Source project to share programming skills',
     url='https://github.com/viralj/Rekha.Io',
-    license='BSD License',
+    license='',
     platforms=['OS Independent'],
     classifiers=CLASSIFIERS,
     install_requires=INSTALL_REQUIREMENTS,
