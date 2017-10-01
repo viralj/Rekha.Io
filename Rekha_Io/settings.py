@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'RekhaIo',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -133,6 +134,9 @@ STATIC_URL = '/static/'
 
 # Location for static files like CSS, JS, IMGS
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# User authentication model
+AUTH_USER_MODEL = 'accounts.User'
 
 # Logging errors and debugging information
 if not DEBUG:
