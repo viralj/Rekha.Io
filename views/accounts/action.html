@@ -1,0 +1,108 @@
+{% extends 'base.html' %}{% load static %}{% load compress %}
+
+{% block title %}Rekha.Io : Sign up here or login to access services.{% endblock %}
+
+{% block head %}
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'css/accounts.action.css' %}">
+    {% endcompress %}
+{% endblock %}
+
+{% block head_js %}
+{% endblock %}
+
+
+{% block header %}
+    {% include 'common/_head_nav.html' %}
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <div class="col s12 m6 l6 offset-m3 offset-l3 white z-depth-2">
+                <div class="row" id="action_toggle">
+                    <div class="col s6 m6 l6 center _ah _aha" id="_sfb">
+                        <span>Signup</span>
+                    </div>
+                    <div class="col s6 m6 l6 center _ah" id="_lfb">
+                        <span>Login</span>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row" id="action_form">
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <div id="_sf">
+        <form method="POST" action="{% url 'accounts:action_signup' %}" class="col s12" autocomplete="off">
+            {% csrf_token %}
+            <div class="row">
+                {% for field in signup_form %}
+                    <div class="input-field col s12 m8 l8 offset-m2 offset-l2">
+                        {{ field }}
+                        {{ field.label_tag }}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <button class="btn waves-effect waves-light grey lighten-2 red-text text-lighten-1" type="submit"
+                            name="signup_btn">
+                        <span>Register</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="_lf">
+        <form method="POST" action="{% url 'accounts:action_login' %}" class="col s12" autocomplete="off">
+            {% csrf_token %}
+            <div class="row">
+                {% for field in login_form %}
+                    <div class="input-field col s12 m8 l8 offset-m2 offset-l2">
+                        {{ field }}
+                        {{ field.label_tag }}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="row">
+                <div class="col s3 offset-s2">
+                    <button class="btn waves-effect waves-light light-green lighten-1 white-text" type="submit"
+                            name="login_btn">
+                        <span>Login</span>
+                    </button>
+                </div>
+                <div class="col s3 offset-s1">
+                    <button class="btn waves-effect waves-light blue lighten-1 white-text" type="button"
+                            name="forgot_btn">
+                        <span>Forgot</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    {% include 'common/_footer.html' %}
+{% endblock %}
+
+{% block footer_js %}
+    {% compress js %}
+        {% if messages %}
+
+            {% for message in messages %}
+                <script type="text/javascript">Materialize.toast('{{ message }}', 5000);</script>
+            {% endfor %}
+
+        {% endif %}
+        <script src="{% static 'js/accounts.action.js' %}"></script>
+    {% endcompress %}
+{% endblock %}

@@ -1,0 +1,27 @@
+/* action header */
+._ah {
+    padding: 1.5rem !important;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #ff9800;
+}
+
+/* action header active */
+._aha {
+    background-color: white;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+    color: #ffb74d !important;
+}
+
+/* label underline focus color */
+.row .input-field input:focus {
+    border-bottom: 1px solid #ffb74d !important;
+    box-shadow: 0 1px 0 0 #ffb74d !important
+}
+
+#_sf, #_lf {
+    display: none;
+}
