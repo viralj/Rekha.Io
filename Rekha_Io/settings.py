@@ -34,8 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "compressor",
     'RekhaIo',
     'accounts',
+    'plugins',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Rekha_Io.wsgi.application'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
@@ -133,7 +137,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Location for static files like CSS, JS, IMGS
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # User authentication model
 AUTH_USER_MODEL = 'accounts.User'
@@ -183,3 +188,16 @@ if not DEBUG:
             },
         },
     }
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
+
+COMPRESS_ROOT = os.path.join(BASE_DIR, 'compressed')
+COMPRESS_ENABLED = not DEBUG
+COMPRESS_CSS_FILTERS = [
+    'compressor.filters.css_default.CssAbsoluteFilter',
+    'compressor.filters.cssmin.CSSMinFilter'
+]

@@ -5,6 +5,7 @@ INSTALL_REQUIREMENTS = [
     'mysqlclient>=1.3.10',
     'setuptools>=36.2.2',
     'pytz>=2017.2',
+    'django_compressor>=2.2',
 ]
 
 CLASSIFIERS = [

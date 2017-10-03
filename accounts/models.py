@@ -76,6 +76,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     def get_short_name(self):
         """
         Returns short name, first name.
-        :return: first_name
+        :return:
         """
         return self.first_name.strip()
