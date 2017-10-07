@@ -55,5 +55,3 @@ class RIUserActivationEmailSender(object):
         self.user.save()
 
         return HttpResponseRedirect("/")
-
-    
