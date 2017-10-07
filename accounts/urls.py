@@ -3,6 +3,7 @@ Url file for all accounts related urls
 """
 
 from django.conf.urls import url
+from django.contrib.auth import views
 
 from accounts.views import *
 
@@ -14,5 +15,5 @@ urlpatterns = [
     url(r'^action/SignUp$', RIAccountsActionSignup.as_view(), name="action_signup"),
 
     # to process login request
-    url(r'^action/Login$', RIAccountsAction.as_view(), name="action_login"),
+    url(r'^action/Login$', RIAccountsActionLogin.as_view(), name="action_login"),
 ]

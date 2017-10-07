@@ -53,8 +53,7 @@
             </div>
             <div class="row">
                 <div class="col s8 offset-s2">
-                    <button class="btn waves-effect waves-light grey lighten-2 red-text text-lighten-1" type="submit"
-                            name="signup_btn">
+                    <button class="btn waves-effect waves-light grey lighten-2 red-text text-lighten-1" type="submit" name="signup_btn">
                         <span>Register</span>
                     </button>
                 </div>
@@ -76,14 +75,12 @@
 
             <div class="row">
                 <div class="col s3 offset-s2">
-                    <button class="btn waves-effect waves-light light-green lighten-1 white-text" type="submit"
-                            name="login_btn">
+                    <button class="btn waves-effect waves-light light-green lighten-1 white-text" type="submit" name="login_btn">
                         <span>Login</span>
                     </button>
                 </div>
                 <div class="col s3 offset-s1">
-                    <button class="btn waves-effect waves-light blue lighten-1 white-text" type="button"
-                            name="forgot_btn">
+                    <button class="btn waves-effect waves-light blue lighten-1 white-text" type="button" name="forgot_btn">
                         <span>Forgot</span>
                     </button>
                 </div>
@@ -99,7 +96,7 @@
         {% if messages %}
 
             {% for message in messages %}
-                <script type="text/javascript">Materialize.toast('{{ message }}', 5000);</script>
+                <script type="text/javascript">Materialize.toast('Error: {{ message }}', 5000);</script>
             {% endfor %}
 
         {% endif %}
