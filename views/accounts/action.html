@@ -96,7 +96,7 @@
         {% if messages %}
 
             {% for message in messages %}
-                <script type="text/javascript">Materialize.toast('Error: {{ message }}', 5000);</script>
+                <script type="text/javascript">Materialize.toast('{{ message.tags|title }}: {{ message }}', 5000);</script>
             {% endfor %}
 
         {% endif %}
