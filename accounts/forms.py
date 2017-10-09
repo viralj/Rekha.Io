@@ -1,4 +1,5 @@
 import random
+import re
 
 from django import forms
 from django.contrib.auth import login
@@ -18,13 +19,18 @@ class UserCreationForm(forms.ModelForm):
     error_messages = {
         'email_registered': _('Email address is already registered with us!'),
         'username_taken': _('Username is taken! Please choose another username.'),
-        'username_short': _('Username is too short, 5-10 characters only.'),
-        'username_long': _('Username is too long, 5-10 characters only,'),
+        'username_short': _('Username is too short, 5-15 characters only.'),
+        'username_long': _('Username is too long, 5-15 characters only.'),
+        'username_invalid': _('Username is not allowed. Alphanumeric, "-", "." and "-" allowed. '),
         'password_weak': _(
             "Password is short. Please select strong password, something like {}".format(
                 "".join(random.sample("abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?", 12))
             )),
     }
+
+    def __init__(self, request=None, *args, **kwargs):
+        self.request = request
+        super(UserCreationForm, self).__init__(*args, **kwargs)
 
     class Meta:
         model = User
@@ -66,7 +72,8 @@ class UserCreationForm(forms.ModelForm):
         """
         1) Checking if email is already registered or not. If email is already registered, we will throw an error
         2) Checking if username is taken or not. If username is taken, we will throw an error
-        3) Checking password length and throw error accordingly
+        3) Checking username pattern
+        4) Checking password length and throw error accordingly
 
         :return: cleaned_data
         """
@@ -75,10 +82,11 @@ class UserCreationForm(forms.ModelForm):
         username = cleaned_data.get('username')
         password = cleaned_data.get('password')
 
+        username_pattern = "^[a-zA-Z0-9_.-]+$"
+
         # Step 1:
         try:
             u = User.objects.get(email=email)
-            print("=== ", u.id, u.email)
             raise forms.ValidationError(self.error_messages['email_registered'], code='email_registered')
         except User.DoesNotExist:
             pass
@@ -86,12 +94,15 @@ class UserCreationForm(forms.ModelForm):
         # Step 2:
         try:
             u = User.objects.get(username=username)
-            print("+++ ", u.id, u.email)
             raise forms.ValidationError(self.error_messages['username_taken'], code='username_taken')
         except User.DoesNotExist:
             pass
 
-        # Step 3:
+        # Step 3
+        if not re.match(username_pattern, username):
+            raise forms.ValidationError(self.error_messages['username_invalid'], code='username_invalid')
+
+        # Step 4:
         if len(password) < 10:
             raise forms.ValidationError(self.error_messages['password_weak'], code='password_weak')
 
@@ -105,7 +116,7 @@ class UserCreationForm(forms.ModelForm):
             user.save()
 
         # Activation email plugin
-        RIUserActivationEmailSender(user=user)
+        RIUserActivationEmailSender(user=user, request=self.request)
 
         return user
 

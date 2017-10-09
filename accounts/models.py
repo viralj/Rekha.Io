@@ -6,6 +6,14 @@ from django.utils.http import urlquote
 from django.utils.translation import ugettext_lazy as _
 
 
+def two_days_hence():
+    """
+    To return time after 48 hours.
+    :return:
+    """
+    return timezone.now() + timezone.timedelta(days=2)
+
+
 # Create your models here.
 
 class CustomUserManager(BaseUserManager):
@@ -43,11 +51,13 @@ class User(AbstractBaseUser, PermissionsMixin):
     """
 
     email = models.EmailField(_('email address'), max_length=254, unique=True)
-    username = models.CharField(_('username'), max_length=10, unique=True)
+    username = models.CharField(_('username'), max_length=15, unique=True)
     first_name = models.CharField(_('first name'), max_length=30, blank=True)
     last_name = models.CharField(_('last name'), max_length=30, blank=True)
-    is_active = models.BooleanField(_('active'), default=False, help_text=_('is user active?'))
+    is_active = models.BooleanField(_('active'), default=True, help_text=_('is user active?'))
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
+    email_verified = models.BooleanField(_('email verified'), default=False, help_text=_('is user email verified?'))
+    is_verified = models.BooleanField(_('verified'), default=False, help_text=_('is user identity verified?'))
 
     USER_TYPES = (
         (0, 'developer'),
@@ -103,6 +113,6 @@ class UserAccountAction(models.Model):
     belongs_to_user = models.ForeignKey('User', null=False, help_text=_('belongs to user'))
     action_type = models.IntegerField(_('action type'), null=False)
     date_created = models.DateTimeField(_('date created'), auto_now_add=True, null=False)
-    expires = models.DateTimeField(_('expires'), auto_now_add=False, null=False)
+    expires = models.DateTimeField(_('expires'), default=two_days_hence(), null=False)
     last_modified = models.DateTimeField(_('last modified'), auto_now_add=True, null=False)
     is_used = models.BooleanField(_('is used'), default=False)
