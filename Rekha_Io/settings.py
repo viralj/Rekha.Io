@@ -195,9 +195,20 @@ STATICFILES_FINDERS = (
     'compressor.finders.CompressorFinder',
 )
 
+# CSS and JS compressor/ninifier
 COMPRESS_ROOT = os.path.join(BASE_DIR, 'compressed')
 COMPRESS_ENABLED = not DEBUG
 COMPRESS_CSS_FILTERS = [
     'compressor.filters.css_default.CssAbsoluteFilter',
     'compressor.filters.cssmin.CSSMinFilter'
 ]
+
+# Site url
+RI_SITE_URL = "http://localhost"
+
+# Test email settings
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.email.com'
+EMAIL_HOST_USER = 'youremail@email.com'
+EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_PORT = 587
