@@ -6,6 +6,7 @@ from django.urls import reverse
 from django.views.generic import TemplateView
 
 from accounts.forms import UserCreationForm, UserLoginForm
+from accounts.models import UserAccountAction, User
 from plugins.request_params import get_request_param, REQUEST_LOGIN
 
 
@@ -42,7 +43,7 @@ class RIAccountsActionSignup(TemplateView):
 
     def process(self, request, *args, **kwargs):
         if request.POST:
-            signup = UserCreationForm(request.POST)
+            signup = UserCreationForm(request=request, data=request.POST)
 
             if signup.is_valid():
                 signup.save()
@@ -77,3 +78,46 @@ class RIAccountsActionLogin(TemplateView):
                 return HttpResponseRedirect(reverse('accounts:action') + get_request_param(REQUEST_LOGIN))
 
         return HttpResponseRedirect(reverse('accounts:action'))
+
+
+class RIAccountsActionActivate(TemplateView):
+    """
+    This class will handle account activation request.
+
+    System will check for unused unique_code for specific user assigned. If record is found, system will
+    activate user's account and it will be updated as verified email.
+    """
+
+    action_messages = {
+        "email_verified": "Your email is verified and account is activated. You can login now.",
+        "broken_url": "System ran into broken url. Please check your url."
+    }
+
+    def get(self, request, *args, **kwargs):
+        return self.process(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        return self.process(request, *args, **kwargs)
+
+    def process(self, request, *args, **kwargs):
+        unique_code = kwargs.get('unique_code')
+        username = kwargs.get('username')
+
+        try:
+            uaa = UserAccountAction.objects.get(is_used=False, unique_code=unique_code,
+                                                belongs_to_user=User.objects.get(username=username),
+                                                action_type=UserAccountAction.ACCOUNT_ACTIVATION)
+            uaa.belongs_to_user.email_verified = True
+            uaa.belongs_to_user.save()
+
+            uaa.is_used = True
+            uaa.save()
+
+            messages.add_message(request, messages.SUCCESS, self.action_messages['email_verified'])
+
+            return HttpResponseRedirect(reverse('accounts:action') + get_request_param(REQUEST_LOGIN))
+
+        except UserAccountAction.DoesNotExist:
+            messages.add_message(request, messages.ERROR, self.action_messages['broken_url'])
+
+            return HttpResponseRedirect(reverse('accounts:action'))
