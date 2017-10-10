@@ -1,8 +1,13 @@
 # Create your views here.
 from django.contrib import messages
+from django.contrib.auth import logout
 from django.http import HttpResponseRedirect
 from django.template.response import TemplateResponse
 from django.urls import reverse
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import never_cache
+from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.debug import sensitive_post_parameters
 from django.views.generic import TemplateView
 
 from accounts.forms import UserCreationForm, UserLoginForm
@@ -59,6 +64,12 @@ class RIAccountsActionLogin(TemplateView):
     This class will handle login request.
     """
 
+    @method_decorator(sensitive_post_parameters())
+    @method_decorator(csrf_protect)
+    @method_decorator(never_cache)
+    def dispatch(self, request, *args, **kwargs):
+        return super(RIAccountsActionLogin, self).dispatch(request, *args, **kwargs)
+
     def get(self, request, *args, **kwargs):
         return self.process(request, *args, **kwargs)
 
@@ -77,6 +88,22 @@ class RIAccountsActionLogin(TemplateView):
 
                 return HttpResponseRedirect(reverse('accounts:action') + get_request_param(REQUEST_LOGIN))
 
+        return HttpResponseRedirect(reverse('accounts:action'))
+
+
+class RIAccountsActionLogout(TemplateView):
+    """
+    To logout users.
+    """
+
+    def get(self, request, *args, **kwargs):
+        return self.process(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        return self.process(request, *args, **kwargs)
+
+    def process(self, request, *args, **kwargs):
+        logout(request)
         return HttpResponseRedirect(reverse('accounts:action'))
 
 
