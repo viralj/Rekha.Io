@@ -48,6 +48,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # Custom middleware
+    'plugins.middleware.LoggedInRedirectMiddleware'
 ]
 
 ROOT_URLCONF = 'Rekha_Io.urls'
@@ -204,7 +207,7 @@ COMPRESS_CSS_FILTERS = [
 ]
 
 # Site url
-RI_SITE_URL = "http://localhost"
+RI_SITE_URL = "http://localhost:8844"
 
 # Test email settings
 EMAIL_USE_TLS = True
