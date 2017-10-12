@@ -12,22 +12,8 @@
         <link rel="stylesheet" href="{% static 'css/common.css' %}">
         {% block head %}{% endblock %}
         {% block head_js %}{% endblock %}
-        
-        {% compress css inline %}
         <style id="antiClickjack">body{display:none !important;}</style>
-        {% endcompress %}
-        
-        {% compress js inline %}
-        <script type="text/javascript">
-           if (self === top) {
-               var antiClickjack = document.getElementById("antiClickjack");
-               antiClickjack.parentNode.removeChild(antiClickjack);
-           } else {
-               top.location = self.location;
-           }
-        </script>
-        {% endcompress %}
-        
+        <script type="text/javascript">if(self===top){var antiClickjack=document.getElementById("antiClickjack");antiClickjack.parentNode.removeChild(antiClickjack)}else top.location=self.location;</script>
     </head>
     <body class="grey lighten-3">
         <header>
