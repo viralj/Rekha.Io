@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'RekhaIo',
     'accounts',
     'plugins',
+    'secure',
+    'notification',
+    'questions',
+    'educate',
 ]
 
 MIDDLEWARE = [
