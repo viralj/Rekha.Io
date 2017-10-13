@@ -11,6 +11,7 @@ from django.template.loader import render_to_string
 from django.urls import reverse
 from django.utils.html import strip_tags
 
+from Rekha_Io.general import two_days_hence
 from Rekha_Io.settings import RI_SITE_URL, EMAIL_HOST_USER
 from accounts.models import User, UserAccountAction
 from plugins.models import Plugins
@@ -96,7 +97,8 @@ class RIUserActivationEmailSender(object):
              ).encode('utf-8')).hexdigest()
 
         uaa = UserAccountAction.objects.create(unique_code=e_hash, belongs_to_user=self.user,
-                                               action_type=UserAccountAction.ACCOUNT_ACTIVATION)
+                                               action_type=UserAccountAction.ACCOUNT_ACTIVATION,
+                                               expires=two_days_hence())
 
         return uaa.unique_code
 

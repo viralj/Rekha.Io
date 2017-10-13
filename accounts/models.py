@@ -6,14 +6,6 @@ from django.utils.http import urlquote
 from django.utils.translation import ugettext_lazy as _
 
 
-def two_days_hence():
-    """
-    To return time after 48 hours.
-    :return:
-    """
-    return timezone.now() + timezone.timedelta(days=2)
-
-
 # Create your models here.
 
 class CustomUserManager(BaseUserManager):
@@ -113,6 +105,6 @@ class UserAccountAction(models.Model):
     belongs_to_user = models.ForeignKey('User', null=False, help_text=_('belongs to user'))
     action_type = models.IntegerField(_('action type'), null=False)
     date_created = models.DateTimeField(_('date created'), auto_now_add=True, null=False)
-    expires = models.DateTimeField(_('expires'), default=two_days_hence(), null=False)
+    expires = models.DateTimeField(_('expires'), default=None, null=True)
     last_modified = models.DateTimeField(_('last modified'), auto_now_add=True, null=False)
     is_used = models.BooleanField(_('is used'), default=False)

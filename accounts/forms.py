@@ -9,6 +9,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from accounts.models import User
 from plugins.backends import RIUserActivationEmailSender
+from secure.models import UsedPasswords
 
 
 class UserCreationForm(forms.ModelForm):
@@ -117,6 +118,9 @@ class UserCreationForm(forms.ModelForm):
 
         # Activation email plugin
         RIUserActivationEmailSender(user=user, request=self.request)
+
+        # Creating user password record
+        UsedPasswords.objects.create(belongs_to_user=user, password=user.password)
 
         return user
 
