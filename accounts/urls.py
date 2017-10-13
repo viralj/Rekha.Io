@@ -8,7 +8,7 @@ from accounts.views import *
 
 urlpatterns = [
     # to display signup and login forms
-    url(r'^action$', RIAccountsAction.as_view(), name="action"),
+    url(r'^action/?$', RIAccountsAction.as_view(), name="action"),
 
     # to process signup request
     url(r'^action/SignUp$', RIAccountsActionSignup.as_view(), name="action_signup"),
