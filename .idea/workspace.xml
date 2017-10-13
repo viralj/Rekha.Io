@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secure/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secure/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secure/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secure/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secure/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secure/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/secure/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/middleware.py" afterPath="$PROJECT_DIR$/plugins/middleware.py" />
     </list>
@@ -830,7 +823,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507835432480</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="App &quot;secure&quot; created for project.&#10;&#10;-- 10/13/2017 -- Viral Joshi">
+      <created>1507921511962</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1507921511962</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -890,7 +890,8 @@
     <MESSAGE value="Logout functionality added.&#10;&#10;-- 10/10/2017 -- Viral Joshi" />
     <MESSAGE value="Plugins middleware file created and settings.py file updated.&#10;&#10;-- 10/10/2017 -- Viral Joshi" />
     <MESSAGE value="Base html file updated with compressed js code for click jacking. &#10;&#10;-- 10/12/2017 -- Viral Joshi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base html file updated with compressed js code for click jacking. &#10;&#10;-- 10/12/2017 -- Viral Joshi" />
+    <MESSAGE value="App &quot;secure&quot; created for project.&#10;&#10;-- 10/13/2017 -- Viral Joshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="App &quot;secure&quot; created for project.&#10;&#10;-- 10/13/2017 -- Viral Joshi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
