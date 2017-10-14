@@ -1,0 +1,15 @@
+{
+  "name": "rekha-io",
+  "version": "1.0.0",
+  "description": "Rekha.Io : An pen source project to share programming skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Viral Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
