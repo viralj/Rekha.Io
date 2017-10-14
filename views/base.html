@@ -27,8 +27,10 @@
         <footer class="page-footer">
             {% block footer %}{% endblock %}
         </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script crossorigin src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script crossorigin src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
     {% block footer_js %}{% endblock %}
     </body>
     </html>
