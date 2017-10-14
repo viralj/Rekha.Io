@@ -9,6 +9,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.http import HttpResponseRedirect
 from django.template.loader import render_to_string
 from django.urls import reverse
+from django.utils.crypto import get_random_string
 from django.utils.html import strip_tags
 
 from Rekha_Io.general import two_days_hence
@@ -90,10 +91,13 @@ class RIUserActivationEmailSender(object):
         Reason of adding time stamp is that we will be using same model for Account activation and Forget password
         so one user will have same hash everytime and to avoid that, just adding timestamp.
 
+        # Adding random string into unique code hash because user id may be a key to keep it random and safe
+        from being figured out, but just in case, one extra string won't hurt.
+
         :return: UserAccountAction unique_code
         """
         e_hash = hashlib.sha256(
-            (str(self.user.id) + str(self.user.email) + str(self.user.username) + str(time.time())
+            (str(self.user.id) + str(self.user.email) + str(self.user.username) + str(time.time()) + get_random_string()
              ).encode('utf-8')).hexdigest()
 
         uaa = UserAccountAction.objects.create(unique_code=e_hash, belongs_to_user=self.user,
