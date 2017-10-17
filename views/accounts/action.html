@@ -62,7 +62,7 @@
     </div>
 
     <div id="_lf">
-        <form method="POST" action="{% url 'accounts:action_login' %}" class="col s12" autocomplete="off">
+        <form method="POST" action="{% url 'accounts:action_login' %}{% if next_redirect %}?_next={{ next_redirect }}{% endif %}" class="col s12" autocomplete="off">
             {% csrf_token %}
             <div class="row">
                 {% for field in login_form %}
