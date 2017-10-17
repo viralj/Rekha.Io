@@ -17,6 +17,8 @@ from django.conf.urls import url, include
 # from django.contrib import admin
 from django.views.generic import TemplateView
 
+from RekhaIo.views import RIHomePage
+
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
 
@@ -25,4 +27,8 @@ urlpatterns = [
 
     # Accounts urls
     url(r'^accounts/', include('accounts.urls', namespace="accounts"), name="accounts"),
+
+    # home page
+    url(r'^$', RIHomePage.as_view(), name="home_page"),
+    url(r'^home$', RIHomePage.as_view(), name="home"),
 ]
