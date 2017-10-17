@@ -30,6 +30,7 @@ class RIAccountsAction(TemplateView):
         context = {
             'signup_form': UserCreationForm(),
             'login_form': UserLoginForm(),
+            'next_redirect': request.GET.get("_next", None),
         }
 
         return TemplateResponse(request, "accounts/action.html", context)
@@ -40,6 +41,9 @@ class RIAccountsActionSignup(TemplateView):
     This class will handle signup request.
     """
 
+    @method_decorator(sensitive_post_parameters())
+    @method_decorator(csrf_protect)
+    @method_decorator(never_cache)
     def get(self, request, *args, **kwargs):
         return self.process(request, *args, **kwargs)
 
@@ -80,8 +84,31 @@ class RIAccountsActionLogin(TemplateView):
         if request.POST:
             login = UserLoginForm(request=request, data=request.POST)
 
+            next_redirect = request.GET.get("_next", None)
+
             if login.is_valid():
-                return HttpResponseRedirect("/")
+
+                """
+                If login form is valid, checking for next redirect url.
+
+                If redirect url found, check if http, https or // exist in url. If found, redirect user to home page
+                else check if redirect url starts with / or not and redirect user to that url based on existence of /
+                in requested url.
+
+                No need to worry about url path if it actually exist in system or not because Page Not Found will handle
+                the error and 404 page will be displayed.
+                """
+                if next_redirect is not None:
+
+                    if "http://" in str(next_redirect) or "https://" in str(next_redirect) or "//" in str(
+                            next_redirect):
+                        return HttpResponseRedirect("/")
+                    elif str(next_redirect).startswith("/"):
+                        return HttpResponseRedirect(next_redirect)
+                    else:
+                        return HttpResponseRedirect("/" + str(next_redirect))
+                else:
+                    return HttpResponseRedirect("/")
             else:
                 for e in login.non_field_errors():
                     messages.add_message(request, messages.ERROR, str(e))
