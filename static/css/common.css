@@ -26,3 +26,11 @@ main {
 ._logo {
     font-family: 'Nunito', sans-serif !important;
 }
+
+nav ul a {
+    color: #000;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+    color:black;
+}

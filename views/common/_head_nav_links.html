@@ -1,0 +1,39 @@
+<ul id="dropdown1" class="dropdown-content">
+    {% if request.user.is_authenticated %}
+        <li class="divider"></li>
+        <li><a href="{% url 'accounts:action_logout' %}">Logout</a></li>
+    {% else %}
+        <li><a href="{% url 'accounts:action' %}">Sign up</a></li>
+        <li><a href="{% url 'accounts:action' %}?_req=login">Login</a></li>
+    {% endif %}
+</ul>
+<nav class="white">
+    <div class="container">
+        <div class="row">
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo black-text _logo">Rekha.Io</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse">
+                    <i class="material-icons black-text">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    {% if request.user.is_authenticated %}
+                        <li><a class="dropdown-button" href="" data-activates="dropdown1">
+                            <i class="material-icons right black-text">arrow_drop_down</i></a>
+                        </li>
+                    {% else %}
+                        <li><a href="{% url 'accounts:action' %}">Sign up</a></li>
+                        <li><a href="{% url 'accounts:action' %}?_req=login">Login</a></li>
+                    {% endif %}
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    {% if request.user.is_authenticated %}
+                        <li class="divider"></li>
+                        <li><a href="{% url 'accounts:action_logout' %}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'accounts:action' %}">Sign up</a></li>
+                        <li><a href="{% url 'accounts:action' %}?_req=login">Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
