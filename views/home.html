@@ -1,0 +1,29 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block title %}Rekha.Io{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+
+{% block head_js %}{% endblock %}
+
+
+{% block header %}
+    {% include 'common/_head_nav_links.html' %}
+{% endblock %}
+
+
+{% block main %}{% endblock %}
+
+
+{% block footer %}{% endblock %}
+
+
+{% block footer_js %}
+    <script type="text/javascript">
+        $(".button-collapse").sideNav();
+        $(".dropdown-button").dropdown();
+    </script>
+{% endblock %}
