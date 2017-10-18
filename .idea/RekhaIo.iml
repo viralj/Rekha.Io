@@ -20,6 +20,7 @@
     <orderEntry type="library" name="react.production" level="application" />
     <orderEntry type="library" name="react-dom.production" level="application" />
     <orderEntry type="library" name="browser" level="application" />
+    <orderEntry type="library" name="babel" level="application" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Django" />

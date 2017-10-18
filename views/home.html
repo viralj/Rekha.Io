@@ -15,15 +15,15 @@
 {% endblock %}
 
 
-{% block main %}{% endblock %}
+{% block main %}
+    <div id="home-app"></div>
+{% endblock %}
 
 
 {% block footer %}{% endblock %}
 
 
 {% block footer_js %}
-    <script type="text/javascript">
-        $(".button-collapse").sideNav();
-        $(".dropdown-button").dropdown();
-    </script>
+    <script type="text/javascript">$(".button-collapse").sideNav();$(".dropdown-button").dropdown();</script>
+    <script type="text/babel" src="{% static 'js/home.app.js' %}"></script>
 {% endblock %}
