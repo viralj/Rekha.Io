@@ -6,6 +6,8 @@ INSTALL_REQUIREMENTS = [
     'setuptools>=36.2.2',
     'pytz>=2017.2',
     'django_compressor>=2.2',
+    'PyReact==0.6.0',
+    'django-pipeline==1.6.13',
 ]
 
 CLASSIFIERS = [
