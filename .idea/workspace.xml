@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="Compiled home js for react added.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compressed/assets/js/a6c74250dfdd.js" />
+    <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsx_files/home/home.app.jsx" afterPath="$PROJECT_DIR$/jsx_files/home/home.app.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/r/home/home.app.js" afterPath="$PROJECT_DIR$/static/js/r/home/home.app.js" />
-    </list>
-    <list id="c90c5aef-e7e0-40e7-8204-3cb611434f67" name="settings.py" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rekha_Io/settings.py" afterPath="$PROJECT_DIR$/Rekha_Io/settings.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/Rekha_Io/settings.py" ignored="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +21,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
@@ -82,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Rekha_Io/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="210" column="29" lean-forward="false" selection-start-line="210" selection-start-column="29" selection-end-line="210" selection-end-column="29" />
+            <state relative-caret-position="618">
+              <caret line="211" column="22" lean-forward="false" selection-start-line="211" selection-start-column="22" selection-end-line="211" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -210,8 +203,8 @@
         <option value="$PROJECT_DIR$/plugins/jsx_compiler.py" />
         <option value="$PROJECT_DIR$/views/base.html" />
         <option value="$PROJECT_DIR$/jsx_files/home/home.app.jsx" />
-        <option value="$PROJECT_DIR$/Rekha_Io/settings.py" />
         <option value="$PROJECT_DIR$/views/home.html" />
+        <option value="$PROJECT_DIR$/Rekha_Io/settings.py" />
       </list>
     </option>
   </component>
@@ -894,20 +887,6 @@
       <option name="presentableId" value="Default" />
       <updated>1506635296494</updated>
     </task>
-    <task id="LOCAL-00002" summary="Accounts app created. &quot;base.html&quot; file created to extend all views to the file. &quot;setup.py&quot; file created for setup.&#10;&#10;-- 09/29/2017 -- Viral Joshi">
-      <created>1506719874033</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1506719874033</updated>
-    </task>
-    <task id="LOCAL-00003" summary="settings and setup files updated with required changes.&#10;&#10;-- 09/30/2017 -- Viral Joshi">
-      <created>1506791651846</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1506791651846</updated>
-    </task>
     <task id="LOCAL-00004" summary="robots.txt file created and added in url.&#10;&#10;-- 09/30/2017 -- Viral Joshi">
       <created>1506791668764</created>
       <option name="number" value="00004" />
@@ -1237,7 +1216,21 @@
       <option name="project" value="LOCAL" />
       <updated>1508860848978</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Home app jsx updated to test change in compilation using jsx compiler. Compressed js file created to test compressor.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
+      <created>1508860903147</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1508860903147</updated>
+    </task>
+    <task id="LOCAL-00052" summary="settings.py updated with JSX dirs location and compressor asset folder.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
+      <created>1508860960939</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1508860960939</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1293,8 +1286,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Default plugins set to true in model. Account action url updated to serve page when appending slash is found in url.&#10;&#10;-- 10/13/2017 -- Viral Joshi" />
-    <MESSAGE value="Account action url updated to serve page when appending slash is found in url.&#10;&#10;-- 10/13/2017 -- Viral Joshi" />
     <MESSAGE value="New apps &quot;notification&quot;, &quot;questions&quot; and &quot;educate&quot; created.&#10;&#10;-- 10/13/2017 -- Viral Joshi" />
     <MESSAGE value="New applications added.&#10;&#10;-- 10/13/2017 -- Viral Joshi" />
     <MESSAGE value="Random string added in activation code generator.&#10;&#10;-- 10/14/2017 -- Viral Joshi" />
@@ -1318,7 +1309,9 @@
     <MESSAGE value="Babel js CDN removed.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
     <MESSAGE value="Compiled home js for react added.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
     <MESSAGE value="Compress js block added.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compress js block added.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
+    <MESSAGE value="Home app jsx updated to test change in compilation using jsx compiler. Compressed js file created to test compressor.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
+    <MESSAGE value="settings.py updated with JSX dirs location and compressor asset folder.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="settings.py updated with JSX dirs location and compressor asset folder.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1748,18 +1741,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rekha_Io/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="210" column="29" lean-forward="false" selection-start-line="210" selection-start-column="29" selection-end-line="210" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rekha_Io/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="211" column="22" lean-forward="false" selection-start-line="211" selection-start-column="22" selection-end-line="211" selection-end-column="22" />
           <folding />
         </state>
       </provider>
