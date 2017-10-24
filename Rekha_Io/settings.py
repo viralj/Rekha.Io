@@ -147,6 +147,10 @@ STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
+# JSX Files dir
+JSX_FILES_DIR = os.path.join(BASE_DIR, 'jsx_files')
+JSX_FILES_COMPILED_DIR = os.path.join(BASE_DIR, 'static/js/r')
+
 # User authentication model
 AUTH_USER_MODEL = 'accounts.User'
 
@@ -204,6 +208,7 @@ STATICFILES_FINDERS = (
 
 # CSS and JS compressor/ninifier
 COMPRESS_ROOT = os.path.join(BASE_DIR, 'compressed')
+COMPRESS_OUTPUT_DIR = "assets"
 COMPRESS_ENABLED = not DEBUG
 COMPRESS_CSS_FILTERS = [
     'compressor.filters.css_default.CssAbsoluteFilter',
@@ -219,3 +224,8 @@ EMAIL_HOST = 'smtp.email.com'
 EMAIL_HOST_USER = 'youremail@email.com'
 EMAIL_HOST_PASSWORD = 'yourpassword'
 EMAIL_PORT = 587
+
+# For react js
+PIPELINE_COMPILERS = (
+    'react.utils.pipeline.JSXCompiler',
+)
