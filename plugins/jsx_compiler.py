@@ -1,6 +1,8 @@
 import os
 
-from Rekha_Io.settings import JSX_FILES_DIR
+from react import jsx
+
+from Rekha_Io.settings import JSX_FILES_DIR, JSX_FILES_COMPILED_DIR
 
 
 class RIJSXCompiler(object):
@@ -15,6 +17,30 @@ class RIJSXCompiler(object):
 
     def process(self):
         one, two, three = zip(*self.x)
-        print(one)
-        print(two)
-        print(three)
+
+        for z in two[0]:
+            current_dir = "{}/{}".format(JSX_FILES_DIR, z)
+
+            """
+            Creating directory for compiled js
+            """
+            self.create_dir_and_file(z)
+
+            """
+            Walking through current directory and grabbing all JSX files to compile
+            """
+            self.x = os.walk(current_dir)
+            one, two, three = zip(*self.x)
+
+            for t in three[0]:
+                jsx.transform(jsx_path="{}/{}".format(current_dir, t),
+                              js_path="{}/{}/{}".format(JSX_FILES_COMPILED_DIR, z, str(t).replace("jsx", "js")))
+
+    def create_dir_and_file(self, dir_name):
+        """
+        To create directory and compiled file in js compiled files directory.
+        :param dir_name:
+        :return:
+        """
+        if not os.path.exists("{}/{}".format(JSX_FILES_COMPILED_DIR, dir_name)):
+            os.makedirs("{}/{}".format(JSX_FILES_COMPILED_DIR, dir_name))
