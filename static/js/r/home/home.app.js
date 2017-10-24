@@ -8,7 +8,8 @@ class App extends React.Component {
     render() {
         return (
             React.createElement("div", null, 
-                "Hello World!!!"
+                React.createElement("p", null, "Hello World!!!"), 
+                React.createElement("p", null, "This is test file!")
             )
         );
     }

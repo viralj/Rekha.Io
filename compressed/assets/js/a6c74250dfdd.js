@@ -1,0 +1,2 @@
+;$(".button-collapse").sideNav();$(".dropdown-button").dropdown();;class App extends React.Component{render(){return(React.createElement("div",null,React.createElement("p",null,"Hello World!!!"),React.createElement("p",null,"This is test file!")));}}
+ReactDOM.render(React.createElement(App,null),document.getElementById('home-app'));
