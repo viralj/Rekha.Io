@@ -1,4 +1,4 @@
-{% extends 'base.html' %}{% load static %}
+{% extends 'base.html' %}{% load static %}{% load compress %}
 
 {% block title %}Rekha.Io{% endblock %}
 
@@ -24,6 +24,11 @@
 
 
 {% block footer_js %}
-    <script type="text/javascript">$(".button-collapse").sideNav();$(".dropdown-button").dropdown();</script>
-    <script type="text/javascript" src="{% static 'js/r/home/home.app.js' %}"></script>
+    {% compress js %}
+        <script type="text/javascript">
+            $(".button-collapse").sideNav();
+            $(".dropdown-button").dropdown();
+        </script>
+        <script type="text/javascript" src="{% static 'js/r/home/home.app.js' %}"></script>
+    {% endcompress %}
 {% endblock %}
