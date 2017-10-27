@@ -12,6 +12,7 @@ from django.views.generic import TemplateView
 
 from accounts.forms import UserCreationForm, UserLoginForm
 from accounts.models import UserAccountAction, User
+from plugins.backends import RIUserActivationEmailSender
 from plugins.request_params import get_request_param, REQUEST_LOGIN
 
 
@@ -175,3 +176,56 @@ class RIAccountsActionActivate(TemplateView):
             messages.add_message(request, messages.ERROR, self.action_messages['broken_url'])
 
             return HttpResponseRedirect(reverse('accounts:action'))
+
+
+class RIAccountsActionForgotPassRequest(TemplateView):
+    """
+    This class will handle forgot password request request.
+    """
+
+    user = None
+    error_messages = {
+        "email_not_found": "Entered email address not found in system.",
+        "account_not_active": "Your account is not active! "
+                              "Please check your inbox for more information or read community guideline.",
+    }
+
+    @method_decorator(sensitive_post_parameters())
+    @method_decorator(csrf_protect)
+    @method_decorator(never_cache)
+    def get(self, request, *args, **kwargs):
+        return self.process(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        return self.process(request, *args, **kwargs)
+
+    def process(self, request, *args, **kwargs):
+        if request.POST:
+            try:
+                self.user = User.objects.get(email=request.POST.get('email'))
+            except User.DoesNotExist:
+                messages.add_message(request, messages.ERROR, self.error_messages['email_not_found'])
+
+            if self.user is not None:
+                if not self.user.is_active:
+                    messages.add_message(request, messages.ERROR, self.error_messages['account_not_active'])
+                else:
+                    self.send_recovery_link_email()
+
+        return HttpResponseRedirect(reverse('accounts:action'))
+
+    def send_recovery_link_email(self):
+        """
+        This function will send email to user with recovery link in it.
+
+        If user's email address is not verified, we will send activation link again to the email address otherwise
+        password recovery link will be sent.
+
+        :return:
+        """
+
+        if self.user.email_verified:
+            pass
+        else:
+            # Activation email plugin
+            RIUserActivationEmailSender(user=self.user, request=self.request, resend_activation=True)
