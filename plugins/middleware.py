@@ -32,7 +32,7 @@ class LoggedInRedirectMiddleware(MiddlewareMixin):
         ]
 
         restricted_urls = [
-            reverse('accounts:action_signup').lstrip('/')
+            # reverse('accounts:action_signup').lstrip('/')
         ]
 
         # Redirect user from specific pages and restrict access if user is logged in
