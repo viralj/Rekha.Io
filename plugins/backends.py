@@ -32,9 +32,10 @@ class RIUserActivationEmailSender(object):
         "account_created": "Your account is successfully created. You can login now to enjoy programmer's community."
     }
 
-    def __init__(self, user: User, request):
+    def __init__(self, user: User, request, resend_activation=False):
         self.user = user
         self.request = request
+        self.resend_activation = resend_activation
         try:
             plugin, created = Plugins.objects.get_or_create(plugin_hash=self.plugin_hash)
 
@@ -96,15 +97,24 @@ class RIUserActivationEmailSender(object):
 
         :return: UserAccountAction unique_code
         """
-        e_hash = hashlib.sha256(
-            (str(self.user.id) + str(self.user.email) + str(self.user.username) + str(time.time()) + get_random_string()
-             ).encode('utf-8')).hexdigest()
+        if not self.resend_activation:
+            e_hash = hashlib.sha256(
+                (str(self.user.id) + str(self.user.email) + str(self.user.username) + str(
+                    time.time()) + get_random_string()
+                 ).encode('utf-8')).hexdigest()
 
-        uaa = UserAccountAction.objects.create(unique_code=e_hash, belongs_to_user=self.user,
-                                               action_type=UserAccountAction.ACCOUNT_ACTIVATION,
-                                               expires=two_days_hence())
+            uaa = UserAccountAction.objects.create(unique_code=e_hash, belongs_to_user=self.user,
+                                                   action_type=UserAccountAction.ACCOUNT_ACTIVATION,
+                                                   expires=two_days_hence())
 
-        return uaa.unique_code
+            return uaa.unique_code
+
+        else:
+            uaa = UserAccountAction.objects.get(belongs_to_user=self.user,
+                                                action_type=UserAccountAction.ACCOUNT_ACTIVATION,
+                                                )
+
+            return uaa.unique_code
 
     def activation_url_builder(self):
         """
