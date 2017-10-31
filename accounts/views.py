@@ -13,6 +13,7 @@ from django.views.generic import TemplateView
 from accounts.forms import UserCreationForm, UserLoginForm
 from accounts.models import UserAccountAction, User
 from plugins.backends import RIUserActivationEmailSender
+from plugins.password_reset_helper import RIUserPasswordRecoveryEmailSender
 from plugins.request_params import get_request_param, REQUEST_LOGIN
 
 
@@ -178,7 +179,7 @@ class RIAccountsActionActivate(TemplateView):
             return HttpResponseRedirect(reverse('accounts:action'))
 
 
-class RIAccountsActionForgotPassRequest(TemplateView):
+class RIAccountsActionRequest(TemplateView):
     """
     This class will handle forgot password request request.
     """
@@ -225,7 +226,8 @@ class RIAccountsActionForgotPassRequest(TemplateView):
         """
 
         if self.user.email_verified:
-            pass
+            # Password recovery helper
+            RIUserPasswordRecoveryEmailSender(user=self.user, request=self.request)
         else:
             # Activation email plugin
             RIUserActivationEmailSender(user=self.user, request=self.request, resend_activation=True)
