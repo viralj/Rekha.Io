@@ -23,4 +23,11 @@ urlpatterns = [
     url(r'^action/activate/(?P<username>[\w.]{5,15})/(?P<unique_code>[\w]{0,255})$', RIAccountsActionActivate.as_view(),
         name="action_activate"),
 
+    # to process activation email or account recovery
+    url(r'^action/Request$', RIAccountsActionRequest.as_view(), name="action_request"),
+
+    # to process password reset
+    url(r'^action/reset/(?P<username>[\w.]{5,15})/(?P<unique_code>[\w]{0,255})$', RIAccountsActionActivate.as_view(),
+        name="action_reset"),
+
 ]
