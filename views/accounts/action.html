@@ -52,9 +52,15 @@
                 {% endfor %}
             </div>
             <div class="row">
-                <div class="col s8 offset-s2">
+                <div class="col s3 offset-s2">
                     <button class="btn waves-effect waves-light grey lighten-2 red-text text-lighten-1" type="submit" name="signup_btn">
                         <span>Register</span>
+                    </button>
+                </div>
+
+                <div class="col s3 offset-s1">
+                    <button class="btn waves-effect waves-light teal lighten-1 white-text modal-trigger" type="button" name="forgot_btn" data-target="_ff_modal">
+                        <span>Request&nbsp;Activation&nbsp;Email</span>
                     </button>
                 </div>
             </div>
@@ -80,12 +86,39 @@
                     </button>
                 </div>
                 <div class="col s3 offset-s1">
-                    <button class="btn waves-effect waves-light blue lighten-1 white-text" type="button" name="forgot_btn">
+                    <button class="btn waves-effect waves-light blue lighten-1 white-text modal-trigger" type="button" name="forgot_btn" data-target="_ff_modal">
                         <span>Forgot</span>
                     </button>
                 </div>
             </div>
         </form>
+    </div>
+
+    <div id="_ff_modal" class="modal bottom-sheet">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <p class="black-text">Request for activation email or password recovery email from here. Enter your email address and system will know what to do. ;)</p>
+                </div>
+            </div>
+            <form method="POST" action="{% url 'accounts:action_request' %}" class="col s12" autocomplete="off">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="input-field col s12 m8 l8 offset-m2 offset-l2">
+                        <input type="email" name="email" autocomplete="off" maxlength="254" required="" id="id_email" class="black-text">
+                        <label for="id_email" class="">Enter email:</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s3 offset-s2">
+                        <button class="btn waves-effect waves-light light-green lighten-1 white-text" type="submit" name="request_btn">
+                            <span>Request!</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     {% include 'common/_footer.html' %}
