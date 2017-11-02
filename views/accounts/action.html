@@ -41,22 +41,30 @@
     <div id="_sf">
         <form method="POST" action="{% url 'accounts:action_signup' %}" class="col s12" autocomplete="off">
             {% csrf_token %}
+
+            <div class="row">
+                <div class="col s12 m10 l10 offset-m1 offset-l1">
+                    <h4>Create your Rekha.Io account</h4>
+                    <p>Your Rekha.Io account will grant you access to the world's open source programmer's community.</p>
+                </div>
+            </div>
+
             <div class="row">
                 {% for field in signup_form %}
-                    <div class="input-field col s12 m8 l8 offset-m2 offset-l2">
+                    <div class="input-field {% if field.field.widget.attrs.data_class %}{{ field.field.widget.attrs.data_class }}{% else %}col s12 m8 l8 offset-m2 offset-l2{% endif %}">
                         {{ field }}
                         {{ field.label_tag }}
                     </div>
                 {% endfor %}
             </div>
             <div class="row">
-                <div class="col s3 offset-s2">
+                <div class="col s3 m3 l3 offset-m2 offset-l2">
                     <button class="btn waves-effect waves-light grey lighten-2 red-text text-lighten-1" type="submit" name="signup_btn">
                         <span>Register</span>
                     </button>
                 </div>
 
-                <div class="col s9 m9 l9 offset-s2 offset-m2 offset-l2 _su_ftr">
+                <div class="col s12 m9 l9 offset-m2 offset-l2 _su_ftr">
 
                     <p class="_su_tc">By registering, you agree to out you agree to our Terms and that you have read our Data Policy, including our Cookie Use.</p>
 
@@ -72,9 +80,17 @@
     <div id="_lf">
         <form method="POST" action="{% url 'accounts:action_login' %}{% if next_redirect %}?_next={{ next_redirect }}{% endif %}" class="col s12" autocomplete="off">
             {% csrf_token %}
+
+            <div class="row">
+                <div class="col s12 m10 l10 offset-m1 offset-l1">
+                    <h4>Log Into Your Account</h4>
+                    <p>Login to ask questions, post answer, help other programmers and share your knowledge with everyone else around the glob.</p>
+                </div>
+            </div>
+
             <div class="row">
                 {% for field in login_form %}
-                    <div class="input-field col s12 m8 l8 offset-m2 offset-l2">
+                    <div class="input-field {% if field.field.widget.attrs.data_class %}{{ field.field.widget.attrs.data_class }}{% else %}col s12 m8 l8 offset-m2 offset-l2{% endif %}">
                         {{ field }}
                         {{ field.label_tag }}
                     </div>
@@ -82,12 +98,12 @@
             </div>
 
             <div class="row">
-                <div class="col s3 offset-s2">
+                <div class="col s3 m3 l3 offset-m2 offset-l2">
                     <button class="btn waves-effect waves-light light-green lighten-1 white-text" type="submit" name="login_btn">
                         <span>Login</span>
                     </button>
                 </div>
-                <div class="col s3 offset-s1">
+                <div class="col s3 m3 l3 offset-s2 offset-m1 offset-l1">
                     <button class="btn waves-effect waves-light blue lighten-1 white-text modal-trigger" type="button" name="forgot_btn" data-target="_ff_modal">
                         <span>Forgot</span>
                     </button>
