@@ -25,3 +25,12 @@
 #_sf, #_lf, #_ff {
     display: none;
 }
+
+._su_ftr{
+    margin-top: 1rem;
+    font-size: 0.75rem !important;
+}
+
+._su_tc{
+    font-size: 0.7rem !important;
+}
