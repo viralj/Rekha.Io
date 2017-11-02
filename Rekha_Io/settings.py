@@ -54,7 +54,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     # Custom middleware
-    'plugins.middleware.LoggedInRedirectMiddleware'
+    'plugins.middleware.LoggedInRedirectMiddleware',  # To redirect logged in users from accessing some pages
+    'plugins.middleware.DevJSXCompiler',  # To compile jsx files during development
 ]
 
 ROOT_URLCONF = 'Rekha_Io.urls'
