@@ -2,8 +2,9 @@ import random
 import re
 
 from django import forms
-from django.contrib.auth import login
+from django.contrib.auth import login, password_validation
 from django.contrib.auth.forms import UsernameField, AuthenticationForm
+from django.contrib.auth.hashers import check_password
 from django.db.models import Q
 from django.utils.translation import ugettext_lazy as _
 
@@ -12,7 +13,7 @@ from plugins.backends import RIUserActivationEmailSender
 from secure.models import UsedPasswords
 
 
-class UserCreationForm(forms.ModelForm):
+class RIUserCreationForm(forms.ModelForm):
     """
     Custom user creation form. This model form will be used for user signup
     """
@@ -31,7 +32,7 @@ class UserCreationForm(forms.ModelForm):
 
     def __init__(self, request=None, *args, **kwargs):
         self.request = request
-        super(UserCreationForm, self).__init__(*args, **kwargs)
+        super(RIUserCreationForm, self).__init__(*args, **kwargs)
 
     class Meta:
         model = User
@@ -111,7 +112,7 @@ class UserCreationForm(forms.ModelForm):
 
     def save(self, commit=True):
         # Save the provided password in hashed format
-        user = super(UserCreationForm, self).save(commit=False)
+        user = super(RIUserCreationForm, self).save(commit=False)
         user.set_password(self.cleaned_data["password"])
         if commit:
             user.save()
@@ -125,7 +126,7 @@ class UserCreationForm(forms.ModelForm):
         return user
 
 
-class UserLoginForm(AuthenticationForm):
+class RIUserLoginForm(AuthenticationForm):
     """
     User login form
     """
@@ -188,3 +189,78 @@ class UserLoginForm(AuthenticationForm):
 
         except User.DoesNotExist:
             return None
+
+
+class RIUserPasswordResetForm(forms.Form):
+    """
+    This form will handle password reset request
+    """
+    error_messages = {
+        'password_mismatch': _("The two password fields didn't match."),
+        'password_used': _("Please use new password that you have not previously used."),
+        'password_weak': _(
+            "Password is short. Please select strong password, something like {}".format(
+                "".join(random.sample("abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?", 12))
+            )),
+    }
+    required_css_class = 'required'
+    password1 = forms.CharField(
+        label=_("Password"),
+        widget=forms.PasswordInput(attrs={'autofocus': True}),
+        strip=False,
+        help_text=password_validation.password_validators_help_text_html(),
+    )
+    password2 = forms.CharField(
+        label=_("Password (again)"),
+        widget=forms.PasswordInput,
+        strip=False,
+        help_text=_("Enter the same password as before, for verification."),
+    )
+
+    def __init__(self, user, *args, **kwargs):
+        self.user = user
+        super(RIUserPasswordResetForm, self).__init__(*args, **kwargs)
+
+    def clean(self):
+
+        cleaned_data = self.cleaned_data
+        password = cleaned_data.get('password1')
+        password2 = cleaned_data.get('password2')
+
+        if password and password2:
+            if password != password2:
+                raise forms.ValidationError(
+                    self.error_messages['password_mismatch'],
+                    code='password_mismatch',
+                )
+
+        password_validation.validate_password(password2, self.user)
+
+        """
+        Checking if password was used previously
+        """
+        used_pass = UsedPasswords.objects.filter(belongs_to_user=self.user)
+
+        if len(used_pass) > 0:
+            for x in used_pass:
+                if check_password(password, x.password):
+                    raise forms.ValidationError(
+                        self.error_messages['password_used'],
+                        code='password_used',
+                    )
+        if len(password) < 10:
+            raise forms.ValidationError(self.error_messages['password_weak'], code='password_weak')
+
+        return cleaned_data
+
+    def save(self, commit=True):
+        """
+        Saves the new password.
+        """
+        password = self.cleaned_data["password1"]
+        self.user.set_password(password)
+        if commit:
+            self.user.save()
+            # Creating user password record
+            UsedPasswords.objects.create(belongs_to_user=self.user, password=self.user.password)
+        return self.user
