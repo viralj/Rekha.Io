@@ -1,20 +1,22 @@
 function gup(name, url) {
     if (!url) url = location.href;
     name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-    var regexS = "[\\?&]" + name + "=([^&#]*)";
-    var regex = new RegExp(regexS);
-    var results = regex.exec(url);
+    let regexS = "[\\?&]" + name + "=([^&#]*)";
+    let regex = new RegExp(regexS);
+    let results = regex.exec(url);
     return results == null ? null : results[1];
 }
 $(document).ready(function () {
-    var signupF = $('#_sf');    //signup form
-    var loginF = $('#_lf');     //login form
-    var signupB = $('#_sfb');    //signup button
-    var loginB = $('#_lfb');     //login button
+    $('.modal').modal();
 
-    var actionF = $('#action_form');
+    let signupF = $('#_sf');    //signup form
+    let loginF = $('#_lf');     //login form
+    let signupB = $('#_sfb');    //signup button
+    let loginB = $('#_lfb');     //login button
 
-    var toggler = function (i) {
+    let actionF = $('#action_form');
+
+    let toggler = function (i) {
         /*
          * If signup button is clicked, add active class to signup button else add it to login class
          * */
