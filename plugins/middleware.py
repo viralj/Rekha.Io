@@ -6,6 +6,8 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.utils.deprecation import MiddlewareMixin
 
+from Rekha_Io.settings import DEBUG
+from plugins.jsx_compiler import RIJSXCompiler
 from plugins.request_params import get_request_param, REQUEST_LOGIN
 
 __author__ = "Viral Joshi"
@@ -43,5 +45,18 @@ class LoggedInRedirectMiddleware(MiddlewareMixin):
         if self.path in restricted_urls and not request.user.is_authenticated:
             return HttpResponseRedirect(
                 reverse('accounts:action') + get_request_param(REQUEST_LOGIN, {'_next': self.path}))
+
+        return None
+
+
+class DevJSXCompiler(MiddlewareMixin):
+    """
+    To compile jsx files in development environment and run it.
+
+    """
+
+    def process_request(self, request):
+        if DEBUG:
+            RIJSXCompiler()
 
         return None
