@@ -25,10 +25,7 @@
 
 {% block footer_js %}
     {% compress js %}
-        <script type="text/javascript">
-            $(".button-collapse").sideNav();
-            $(".dropdown-button").dropdown();
-        </script>
+        <script type="text/javascript">$(".button-collapse").sideNav();$(".dropdown-button").dropdown();</script>
         <script type="text/javascript" src="{% static 'js/r/home/home.app.js' %}"></script>
     {% endcompress %}
 {% endblock %}
