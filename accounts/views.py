@@ -4,17 +4,18 @@ from django.contrib.auth import logout
 from django.http import HttpResponseRedirect
 from django.template.response import TemplateResponse
 from django.urls import reverse
+from django.utils import timezone
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_protect
 from django.views.decorators.debug import sensitive_post_parameters
 from django.views.generic import TemplateView
 
-from accounts.forms import UserCreationForm, UserLoginForm
+from Rekha_Io.general import get_ri_login_with_param
+from accounts.forms import RIUserCreationForm, RIUserLoginForm, RIUserPasswordResetForm
 from accounts.models import UserAccountAction, User
 from plugins.backends import RIUserActivationEmailSender
 from plugins.password_reset_helper import RIUserPasswordRecoveryEmailSender
-from plugins.request_params import get_request_param, REQUEST_LOGIN
 
 
 class RIAccountsAction(TemplateView):
@@ -30,8 +31,8 @@ class RIAccountsAction(TemplateView):
 
     def process(self, request, *args, **kwargs):
         context = {
-            'signup_form': UserCreationForm(),
-            'login_form': UserLoginForm(),
+            'signup_form': RIUserCreationForm(),
+            'login_form': RIUserLoginForm(),
             'next_redirect': request.GET.get("_next", None),
         }
 
@@ -54,7 +55,7 @@ class RIAccountsActionSignup(TemplateView):
 
     def process(self, request, *args, **kwargs):
         if request.POST:
-            signup = UserCreationForm(request=request, data=request.POST)
+            signup = RIUserCreationForm(request=request, data=request.POST)
 
             if signup.is_valid():
                 signup.save()
@@ -84,7 +85,7 @@ class RIAccountsActionLogin(TemplateView):
 
     def process(self, request, *args, **kwargs):
         if request.POST:
-            login = UserLoginForm(request=request, data=request.POST)
+            login = RIUserLoginForm(request=request, data=request.POST)
 
             next_redirect = request.GET.get("_next", None)
 
@@ -115,7 +116,7 @@ class RIAccountsActionLogin(TemplateView):
                 for e in login.non_field_errors():
                     messages.add_message(request, messages.ERROR, str(e))
 
-                return HttpResponseRedirect(reverse('accounts:action') + get_request_param(REQUEST_LOGIN))
+                return get_ri_login_with_param()
 
         return HttpResponseRedirect(reverse('accounts:action'))
 
@@ -133,7 +134,7 @@ class RIAccountsActionLogout(TemplateView):
 
     def process(self, request, *args, **kwargs):
         logout(request)
-        return HttpResponseRedirect(reverse('accounts:action'))
+        return get_ri_login_with_param()
 
 
 class RIAccountsActionActivate(TemplateView):
@@ -171,7 +172,7 @@ class RIAccountsActionActivate(TemplateView):
 
             messages.add_message(request, messages.SUCCESS, self.action_messages['email_verified'])
 
-            return HttpResponseRedirect(reverse('accounts:action') + get_request_param(REQUEST_LOGIN))
+            return get_ri_login_with_param()
 
         except UserAccountAction.DoesNotExist:
             messages.add_message(request, messages.ERROR, self.action_messages['broken_url'])
@@ -231,3 +232,62 @@ class RIAccountsActionRequest(TemplateView):
         else:
             # Activation email plugin
             RIUserActivationEmailSender(user=self.user, request=self.request, resend_activation=True)
+
+
+class RIAccountsActionPasswordReset(TemplateView):
+    """
+    This class will handle request for Password Reset Action page.
+    """
+    context = None
+
+    error_messages = {
+        'invalid_url': "Please check your reset password link or request new!",
+        'password_updated': "Your password is successfully updated. You can now login with your new password!"
+    }
+
+    def get(self, request, *args, **kwargs):
+        return self.process(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        return self.process(request, *args, **kwargs)
+
+    def process(self, request, *args, **kwargs):
+        user = uaa = None
+        try:
+            user = User.objects.get(username=kwargs.get('username'), is_active=True, email_verified=True)
+
+            try:
+                uaa = UserAccountAction.objects.get(belongs_to_user=user,
+                                                    unique_code=kwargs.get('unique_code'),
+                                                    is_used=False,
+                                                    action_type=UserAccountAction.ACCOUNT_PASSWORD_RECOVERY,
+                                                    expires__gte=timezone.now())
+
+                self.context = {
+                    'password_reset_form': RIUserPasswordResetForm(user=user)
+                }
+            except UserAccountAction.DoesNotExist:
+                uaa = self.context = None
+
+        except User.DoesNotExist:
+            user = self.context = None
+
+        if self.context is None:
+            messages.add_message(request, messages.ERROR, self.error_messages['invalid_url'])
+            return HttpResponseRedirect(reverse('accounts:action'))
+
+        if request.method == "POST":
+            f = RIUserPasswordResetForm(user=user, data=request.POST)
+
+            if f.is_valid():
+                f.save(commit=True)
+                uaa.is_used = True
+                uaa.save()
+
+                messages.add_message(request, messages.SUCCESS, self.error_messages['password_updated'])
+                return get_ri_login_with_param()
+            else:
+                for e in f.non_field_errors():
+                    messages.add_message(request, messages.ERROR, str(e))
+
+        return TemplateResponse(request, "accounts/password_reset.html", self.context)
