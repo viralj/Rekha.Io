@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito|Lato:400,700|Raleway:500,600');
+/*@import url('https://fonts.googleapis.com/css?family=Nunito|Lato:400,700|Raleway:500,600|Open+Sans');*/
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
 
 /*font-family: 'Nunito', sans-serif;*/
 /*font-family: 'Raleway', sans-serif;*/
 /*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Raleway', sans-serif !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Open Sans", sans-serif !important;
 }
 
 main {
@@ -31,6 +33,6 @@ nav ul a {
     color: #000;
 }
 
-.dropdown-content li>a, .dropdown-content li>span{
-    color:black;
+.dropdown-content li > a, .dropdown-content li > span {
+    color: black;
 }
