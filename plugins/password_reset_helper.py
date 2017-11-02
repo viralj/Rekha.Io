@@ -37,12 +37,11 @@ class RIUserPasswordRecoveryEmailSender(object):
 
         c = {
             'user_full_name': self.user.get_full_name(),
-            'user_username': self.user.username,
-            'user_activation_link': self.recovery_url_builder()
+            'password_reset_link': self.recovery_url_builder()
         }
 
-        email_title = "Activate your Rekha.Io account!"
-        email_html = render_to_string('plugins/user_activation_email.html', c)
+        email_title = "Reset your Rekha.Io account password!"
+        email_html = render_to_string('plugins/user_password_reset.html', c)
 
         try:
             email = EmailMultiAlternatives(subject=email_title, body=strip_tags(email_html),
