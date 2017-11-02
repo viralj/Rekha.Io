@@ -40,24 +40,29 @@ class RIUserCreationForm(forms.ModelForm):
         widgets = {
             'email': forms.TextInput(attrs={
                 'type': 'email',
-                'autocomplete': 'off'
+                'autocomplete': 'off',
+                'data_class': 'col s12 m8 l8 offset-m2 offset-l2',
             }),
             'password': forms.TextInput(attrs={
                 'type': 'password',
-                'minlength': '10'
+                'minlength': '10',
+                'data_class': 'col s12 m4 l4',
             }),
             'username': forms.TextInput(attrs={
                 'type': 'text',
                 'minlength': '6',
-                'autocomplete': 'off'
+                'autocomplete': 'off',
+                'data_class': 'col s12 m4 l4 offset-m2 offset-l2',
             }),
             'first_name': forms.TextInput(attrs={
                 'type': 'text',
-                'autocomplete': 'off'
+                'autocomplete': 'off',
+                'data_class': 'col s12 m4 l4 offset-m2 offset-l2',
             }),
             'last_name': forms.TextInput(attrs={
                 'type': 'text',
-                'autocomplete': 'off'
+                'autocomplete': 'off',
+                'data_class': 'col s12 m4 l4',
             })
 
         }
