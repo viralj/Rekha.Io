@@ -7,6 +7,10 @@ from django.conf.urls import url
 from accounts.views import *
 
 urlpatterns = [
+
+    # to display signup and login forms
+    url(r'^login/?$', RIAccountsLoginRedirect.as_view(), name="login_redirect"),
+
     # to display signup and login forms
     url(r'^action/?$', RIAccountsAction.as_view(), name="action"),
 

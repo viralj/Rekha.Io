@@ -18,6 +18,27 @@ from plugins.backends import RIUserActivationEmailSender
 from plugins.password_reset_helper import RIUserPasswordRecoveryEmailSender
 
 
+class RIAccountsLoginRedirect(TemplateView):
+    """
+    To handle Django's default login redirect
+    """
+    def get(self, request, *args, **kwargs):
+        next_redirect = request.GET.get("next", None)
+
+        if next_redirect is not None:
+            next_redirect = {"_next": next_redirect}
+
+        return get_ri_login_with_param(next_redirect)
+
+    def post(self, request, *args, **kwargs):
+        next_redirect = request.GET.get("next", None)
+
+        if next_redirect is not None:
+            next_redirect = {"_next": next_redirect}
+
+        return get_ri_login_with_param(next_redirect)
+
+
 class RIAccountsAction(TemplateView):
     """
     This class will handle request for Accounts Action page where Sign up form and Login form will be displayed.
