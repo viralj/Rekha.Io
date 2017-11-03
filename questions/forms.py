@@ -7,7 +7,7 @@ from plugins.form_helper import RIHelperModelForm
 from questions.models import Question
 
 
-class RIAskQuestion(RIHelperModelForm):
+class RIAskQuestionForm(RIHelperModelForm):
     """
     Ask question form using Question model
     """
@@ -16,7 +16,7 @@ class RIAskQuestion(RIHelperModelForm):
     }
 
     def __init__(self, *args, **kwargs):
-        super(RIAskQuestion, self).__init__(*args, **kwargs)
+        super(RIAskQuestionForm, self).__init__(*args, **kwargs)
 
     class Meta:
         model = Question
