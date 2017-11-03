@@ -4,6 +4,8 @@ from django.views.generic import TemplateView
 
 
 class RIHomePage(TemplateView):
+    context = {}
+
     def get(self, request, *args, **kwargs):
         return self.process(request, *args, **kwargs)
 
@@ -11,5 +13,4 @@ class RIHomePage(TemplateView):
         return self.process(request, *args, **kwargs)
 
     def process(self, request, *args, **kwargs):
-        context = {}
-        return TemplateResponse(request, "home.html", context)
+        return TemplateResponse(request, "home.html", self.context)
