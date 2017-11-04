@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="Password reset functionality&#10;&#10;-- 11/01/2017 -- Viral Joshi">
+    <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="Questions urls included.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RekhaIo.iml" afterPath="$PROJECT_DIR$/.idea/RekhaIo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/urls.py" afterPath="$PROJECT_DIR$/accounts/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/questions/views.py" afterPath="$PROJECT_DIR$/questions/views.py" />
     </list>
-    <list id="f328a545-13aa-42a1-ab2f-c65a9d53edc4" name="settings.py" comment="">
+    <list id="aaa39bba-7c44-4031-9f45-f4d13b2d91cd" name="settings.py" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rekha_Io/settings.py" afterPath="$PROJECT_DIR$/Rekha_Io/settings.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/Rekha_Io/settings.py" ignored="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,88 +27,88 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="action.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/accounts/action.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/questions/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="115" column="65" lean-forward="false" selection-start-line="115" selection-start-column="65" selection-end-line="115" selection-end-column="65" />
+            <state relative-caret-position="594">
+              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <file leaf-file-name="ask_question.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/questions/ask_question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="65" />
+            <state relative-caret-position="264">
+              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <file leaf-file-name="questions.ask.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="287" column="48" lean-forward="false" selection-start-line="287" selection-start-column="48" selection-end-line="287" selection-end-column="48" />
-              <folding>
-                <element signature="e#26#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rekha_Io/general.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="password_reset.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/accounts/password_reset.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+            <state relative-caret-position="484">
+              <caret line="22" column="99" lean-forward="false" selection-start-line="22" selection-start-column="99" selection-end-line="22" selection-end-column="99" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/forms.py">
+      <file leaf-file-name="questions.ask.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/questions.ask.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="262" column="28" lean-forward="true" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
-              <folding>
-                <element signature="e#4542#6602#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accounts.action.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/accounts.action.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-181">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accounts.action.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/accounts.action.css">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/questions/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="352">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/questions/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_helper.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/form_helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="514">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,10 +118,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Python Script" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -139,35 +140,25 @@
       <find>EMAIL_HOST</find>
       <find>Your username is</find>
       <find>APPEND_SLASH</find>
-      <find>localhost</find>
-      <find>user_activation_link</find>
-      <find>user_username</find>
-      <find>UserCreationForm</find>
-      <find>UserLoginForm</find>
-      <find>broke</find>
-      <find>non_field_errors</find>
-      <find>+ get_request_param(REQUEST_LOGIN)</find>
-      <find>HttpResponseRedirect(reverse('accounts:action') + get_request_param(REQUEST_LOGIN))</find>
+      <find>var</find>
+      <find>forgot_btn</find>
+      <find>=====</find>
+      <find>action_messages</find>
+      <find>data-class</find>
+      <find>login</find>
     </findStrings>
     <replaceStrings>
-      <replace>127.0.0.1</replace>
-      <replace>password_reset_link</replace>
-      <replace>RIUserCreationForm</replace>
-      <replace>RIUserLoginForm</replace>
-      <replace>get_ri_login_with_param()</replace>
+      <replace>let</replace>
+      <replace>data_class</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/robots.txt" />
-        <option value="$PROJECT_DIR$/views/common/_head_nav.html" />
         <option value="$PROJECT_DIR$/views/common/_footer.html" />
-        <option value="$PROJECT_DIR$/static/js/accounts.action.js" />
         <option value="$PROJECT_DIR$/plugins/request_params.py" />
         <option value="$PROJECT_DIR$/views/accounts/test.html" />
         <option value="/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/contrib/auth/__init__.py" />
@@ -182,34 +173,42 @@
         <option value="$PROJECT_DIR$/secure/models.py" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/plugins/models.py" />
-        <option value="$PROJECT_DIR$/questions/urls.py" />
-        <option value="$PROJECT_DIR$/plugins/backends.py" />
-        <option value="$PROJECT_DIR$/questions/models.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/plugins/middleware.py" />
-        <option value="$PROJECT_DIR$/Rekha_Io/urls.py" />
-        <option value="$PROJECT_DIR$/RekhaIo/views.py" />
         <option value="$PROJECT_DIR$/static/css/home.css" />
-        <option value="$PROJECT_DIR$/static/css/common.css" />
-        <option value="$PROJECT_DIR$/views/common/_head_nav_links.html" />
         <option value="$PROJECT_DIR$/static/js/home.app.js" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/RekhaIo/management/commands/compile_jsx.py" />
         <option value="$PROJECT_DIR$/jsx_files/accounts/accounts.jsx.js" />
         <option value="$PROJECT_DIR$/plugins/jsx_compiler.py" />
-        <option value="$PROJECT_DIR$/views/base.html" />
-        <option value="$PROJECT_DIR$/jsx_files/home/home.app.jsx" />
-        <option value="$PROJECT_DIR$/views/home.html" />
+        <option value="$PROJECT_DIR$/static/js/accounts.action.js" />
+        <option value="$PROJECT_DIR$/plugins/backends.py" />
+        <option value="$PROJECT_DIR$/plugins/general.py" />
         <option value="$PROJECT_DIR$/static/css/accounts.action.css" />
-        <option value="$PROJECT_DIR$/Rekha_Io/settings.py" />
-        <option value="$PROJECT_DIR$/views/accounts/action.html" />
-        <option value="$PROJECT_DIR$/views/plugins/user_password_reset.html" />
-        <option value="$PROJECT_DIR$/plugins/password_reset_helper.py" />
-        <option value="$PROJECT_DIR$/accounts/urls.py" />
-        <option value="$PROJECT_DIR$/views/accounts/password_reset.html" />
+        <option value="$PROJECT_DIR$/static/css/common.css" />
+        <option value="$PROJECT_DIR$/plugins/middleware.py" />
+        <option value="$PROJECT_DIR$/static/js/r/home/home.app.js" />
         <option value="$PROJECT_DIR$/accounts/forms.py" />
+        <option value="$PROJECT_DIR$/views/accounts/action.html" />
+        <option value="$PROJECT_DIR$/RekhaIo/views.py" />
+        <option value="$PROJECT_DIR$/views/base.html" />
+        <option value="$PROJECT_DIR$/views/home.html" />
+        <option value="$PROJECT_DIR$/questions/urls.py" />
+        <option value="$PROJECT_DIR$/Rekha_Io/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/urls.py" />
         <option value="$PROJECT_DIR$/Rekha_Io/general.py" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/views/common/_head_nav.html" />
+        <option value="$PROJECT_DIR$/views/common/_head_nav_links.html" />
+        <option value="$PROJECT_DIR$/static/css/questions.ask.css" />
+        <option value="$PROJECT_DIR$/jsx_files/home/home.app.jsx" />
+        <option value="$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx" />
+        <option value="$PROJECT_DIR$/Rekha_Io/settings.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/questions/forms.py" />
+        <option value="$PROJECT_DIR$/common/models.py" />
+        <option value="$PROJECT_DIR$/questions/models.py" />
+        <option value="$PROJECT_DIR$/plugins/form_helper.py" />
+        <option value="$PROJECT_DIR$/questions/views.py" />
+        <option value="$PROJECT_DIR$/views/questions/ask_question.html" />
       </list>
     </option>
   </component>
@@ -221,8 +220,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="width" value="2560" />
+    <option name="height" value="1336" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -239,6 +238,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RekhaIo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RekhaIo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RekhaIo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RekhaIo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="questions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -253,117 +281,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha_Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsx_files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rekha.Io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -379,14 +300,12 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Rekha_Io" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views/accounts" />
-      <recent name="$PROJECT_DIR$/views/plugins" />
       <recent name="$PROJECT_DIR$/jsx_files/home" />
       <recent name="$PROJECT_DIR$/questions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Rekha_Io" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -403,10 +322,16 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dictionaries/LinxSystems_iMac.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/RekhaIo.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Rekha_Io/general.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/accounts/forms.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/accounts/urls.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/accounts/views.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/password_reset_helper.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/accounts.action.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/js/accounts.action.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/accounts/action.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -414,6 +339,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/accounts/password_reset.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/plugins/user_password_reset.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -502,19 +429,10 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Django server.RekhaIo">
+    <configuration default="true" type="ApexTest" factoryName="Apex Test">
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -533,13 +451,6 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -618,7 +529,6 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
@@ -648,6 +558,26 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="RekhaIo" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -681,10 +611,15 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RekhaIo" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -698,9 +633,16 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RekhaIo" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -714,10 +656,18 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="RekhaIo" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;.&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="RekhaIo" type="Python.DjangoServer" factoryName="Django server">
@@ -747,26 +697,6 @@
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Django server.RekhaIo" />
     </list>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="RekhaIo" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -777,263 +707,10 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="" />
-      <changelist id="f328a545-13aa-42a1-ab2f-c65a9d53edc4" name="settings.py" comment="" />
       <created>1506635296494</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506635296494</updated>
-    </task>
-    <task id="LOCAL-00010" summary="To generate query string with params, request_params.py file created&#10;&#10;-- 10/06/2017 -- Viral Joshi">
-      <created>1507325943661</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1507325943661</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Plugins model created.&#10;&#10;-- 10/07/2017 -- Viral Joshi">
-      <created>1507403374924</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1507403374924</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Backend for plugins created.&#10;&#10;-- 10/07/2017 -- Viral Joshi">
-      <created>1507403396404</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1507403396404</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Test change!&#10;&#10;-- 10/07/2017 -- Viral Joshi">
-      <created>1507404487756</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1507404487756</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Updated with test email settings. Comments added. Site url added.&#10;&#10;-- 10/09/2017 -- Viral Joshi">
-      <created>1507553516764</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1507553516764</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Account action html file updated.&#10;&#10;-- 10/09/2017 -- Viral Joshi">
-      <created>1507579021298</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1507579021298</updated>
-    </task>
-    <task id="LOCAL-00016" summary="plugin backend created and account verification email plugin created.&#10;&#10;-- 10/09/2017 -- Viral Joshi">
-      <created>1507579061459</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1507579061459</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Account model updated and form updated for actions. &#10;&#10;-- 10/09/2017 -- Viral Joshi">
-      <created>1507579101226</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1507579101226</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Account verification email template created.&#10;&#10;-- 10/09/2017 -- Viral Joshi">
-      <created>1507579124458</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1507579124458</updated>
-    </task>
-    <task id="LOCAL-00019" summary="URL file updated for routes and views updated. Account activation action created.&#10;&#10;-- 10/09/2017 -- Viral Joshi">
-      <created>1507579161238</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1507579161238</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Logout functionality added.&#10;&#10;-- 10/10/2017 -- Viral Joshi">
-      <created>1507667584300</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1507667584300</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Plugins middleware file created and settings.py file updated.&#10;&#10;-- 10/10/2017 -- Viral Joshi">
-      <created>1507667990274</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1507667990274</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Base html file updated with compressed js code for click jacking. &#10;&#10;-- 10/12/2017 -- Viral Joshi">
-      <created>1507835432480</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1507835432480</updated>
-    </task>
-    <task id="LOCAL-00023" summary="App &quot;secure&quot; created for project.&#10;&#10;-- 10/13/2017 -- Viral Joshi">
-      <created>1507921511962</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1507921511962</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Middleware for logged in user access updated.&#10;&#10;-- 10/13/2017 -- Viral Joshi">
-      <created>1507921535730</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1507921535730</updated>
-    </task>
-    <task id="LOCAL-00025" summary="General functions file created. Plugin backend updated to create activation record with expiration date. Model for app &quot;secure&quot; created to store user's used passwords. Sign up form updated to create used password record.&#10;&#10;-- 10/13/2017 -- Viral Joshi">
-      <created>1507922679907</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1507922679907</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Default plugins set to true in model. Account action url updated to serve page when appending slash is found in url.&#10;&#10;-- 10/13/2017 -- Viral Joshi">
-      <created>1507923663980</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1507923663980</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Account action url updated to serve page when appending slash is found in url.&#10;&#10;-- 10/13/2017 -- Viral Joshi">
-      <created>1507923674241</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1507923674241</updated>
-    </task>
-    <task id="LOCAL-00028" summary="New apps &quot;notification&quot;, &quot;questions&quot; and &quot;educate&quot; created.&#10;&#10;-- 10/13/2017 -- Viral Joshi">
-      <created>1507925221290</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1507925221290</updated>
-    </task>
-    <task id="LOCAL-00029" summary="New applications added.&#10;&#10;-- 10/13/2017 -- Viral Joshi">
-      <created>1507925283840</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1507925283840</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Random string added in activation code generator.&#10;&#10;-- 10/14/2017 -- Viral Joshi">
-      <created>1507990446885</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1507990446885</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Question model updated. Question, Comments, Answers, Votes for Question, Votes for Comments and Votes for Answers classes created. &#10;&#10;-- 10/14/2017 -- Viral Joshi">
-      <created>1507992693154</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1507992693154</updated>
-    </task>
-    <task id="LOCAL-00032" summary="React js installed.&#10;&#10;-- 10/14/2017 -- Viral Joshi">
-      <created>1508011517839</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1508011517839</updated>
-    </task>
-    <task id="LOCAL-00033" summary="React js uninstalled.&#10;&#10;-- 10/14/2017 -- Viral Joshi">
-      <created>1508011610481</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1508011610481</updated>
-    </task>
-    <task id="LOCAL-00034" summary="React js installed. React js will be used to create some of dynamic views and so CDN links are added.&#10;&#10;-- 10/14/2017 -- Viral Joshi">
-      <created>1508011804325</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1508011804325</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Git ignore file created.&#10;&#10;-- 10/16/2017 -- Viral Joshi">
-      <created>1508152789145</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1508152789145</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Bable core browser.js file CDN link added.&#10;&#10;-- 10/16/2017 -- Viral Joshi">
-      <created>1508152816072</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1508152816072</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Home page html file created.&#10;&#10;-- 10/17/2017 -- Viral Joshi">
-      <created>1508274330177</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1508274330177</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Action file login form updated with next url parameter.&#10;&#10;-- 10/17/2017 -- Viral Joshi">
-      <created>1508274366457</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1508274366457</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Navigation html file created for general pages. Css file for home page created and common css file updated.&#10;&#10;-- 10/17/2017 -- Viral Joshi">
-      <created>1508274409067</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1508274409067</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Redirect and restrict access updated in middleware and comments added.&#10;&#10;-- 10/17/2017 -- Viral Joshi">
-      <created>1508274452083</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1508274452083</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Next after login action processor added. Comments added.&#10;&#10;-- 10/17/2017 -- Viral Joshi">
-      <created>1508274486524</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1508274486524</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Home page view created. Url updated.&#10;&#10;-- 10/17/2017 -- Viral Joshi">
-      <created>1508274505629</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1508274505629</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Homepage updated. Babel cdn updated. Test js file created.&#10;&#10;-- 10/18/2017 -- Viral Joshi">
-      <created>1508363927963</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1508363927963</updated>
-    </task>
-    <task id="LOCAL-00044" summary="jsx_compiler file created.&#10;&#10;-- 10/21/2017 -- Viral Joshi">
-      <created>1508611930380</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1508611930380</updated>
-    </task>
-    <task id="LOCAL-00045" summary="setup file updated&#10;&#10;-- 10/21/2017 -- Viral Joshi">
-      <created>1508611957868</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1508611957868</updated>
     </task>
     <task id="LOCAL-00046" summary="JSX Compiler command file created.&#10;&#10;-- 10/21/2017 -- Viral Joshi">
       <created>1508611980280</created>
@@ -1084,77 +761,329 @@
       <option name="project" value="LOCAL" />
       <updated>1508860960939</updated>
     </task>
-    <task id="LOCAL-00053" summary="Accounts html file updated to adjust layout. Accounts css file updated with supporting changes. &#10;&#10;-- 11/01/2017 -- Viral Joshi">
-      <created>1509582261975</created>
+    <task id="LOCAL-00053" summary="Deleting JS files.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
+      <created>1508860979325</created>
       <option name="number" value="00053" />
       <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
-      <updated>1509582261976</updated>
+      <updated>1508860979325</updated>
     </task>
-    <task id="LOCAL-00054" summary="Password reset email template created. Password Reset Helper updated to use correct email template.&#10;&#10;-- 11/01/2017 -- Viral Joshi">
-      <created>1509582987273</created>
+    <task id="LOCAL-00054" summary="Middleware modified to clear test code.&#10;&#10;-- 10/27/2017 -- Viral Joshi">
+      <created>1509148763387</created>
       <option name="number" value="00054" />
       <option name="presentableId" value="LOCAL-00054" />
       <option name="project" value="LOCAL" />
-      <updated>1509582987273</updated>
+      <updated>1509148763387</updated>
     </task>
-    <task id="LOCAL-00055" summary="General function created to get login paramed url.&#10;&#10;-- 11/01/2017 -- Viral Joshi">
-      <created>1509586797424</created>
+    <task id="LOCAL-00055" summary="Forgot password action class added in view.&#10;&#10;-- 10/27/2017 -- Viral Joshi">
+      <created>1509148784003</created>
       <option name="number" value="00055" />
       <option name="presentableId" value="LOCAL-00055" />
       <option name="project" value="LOCAL" />
-      <updated>1509586797424</updated>
+      <updated>1509148784003</updated>
     </task>
-    <task id="LOCAL-00056" summary="Password reset template created.&#10;&#10;-- 11/01/2017 -- Viral Joshi">
-      <created>1509586818030</created>
+    <task id="LOCAL-00056" summary="Plugins backend modified to check for existing unused email verification code. &#10;&#10;-- 10/27/2017 -- Viral Joshi">
+      <created>1509148836474</created>
       <option name="number" value="00056" />
       <option name="presentableId" value="LOCAL-00056" />
       <option name="project" value="LOCAL" />
-      <updated>1509586818031</updated>
+      <updated>1509148836474</updated>
     </task>
-    <task id="LOCAL-00057" summary="Password reset form created.&#10;&#10;-- 11/01/2017 -- Viral Joshi">
-      <created>1509586828873</created>
+    <task id="LOCAL-00057" summary="Password reset helper created. &#10;&#10;-- 10/31/2017 -- Viral Joshi">
+      <created>1509484310845</created>
       <option name="number" value="00057" />
       <option name="presentableId" value="LOCAL-00057" />
       <option name="project" value="LOCAL" />
-      <updated>1509586828873</updated>
+      <updated>1509484310845</updated>
     </task>
-    <task id="LOCAL-00058" summary="Password reset action view created.&#10;&#10;-- 11/01/2017 -- Viral Joshi">
-      <created>1509586843610</created>
+    <task id="LOCAL-00058" summary="Password reset helper added in action view.&#10;&#10;-- 10/31/2017 -- Viral Joshi">
+      <created>1509484354510</created>
       <option name="number" value="00058" />
       <option name="presentableId" value="LOCAL-00058" />
       <option name="project" value="LOCAL" />
-      <updated>1509586843610</updated>
+      <updated>1509484354511</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Urls updated for Account Action Request and test Reset url added.&#10;&#10;-- 10/31/2017 -- Viral Joshi">
+      <created>1509484381497</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1509484381497</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Time difference function added, to get time of two days ago.&#10;&#10;-- 10/31/2017 -- Viral Joshi">
+      <created>1509484423812</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1509484423812</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Password reset or Account Activation email form added. Supporting changes made.&#10;&#10;-- 10/31/2017 -- Viral Joshi">
+      <created>1509484473237</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1509484473237</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Accounts related JS and CSS updated.&#10;&#10;-- 11/01/2017 -- Viral Joshi">
+      <created>1509581406112</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1509581406112</updated>
+    </task>
+    <task id="LOCAL-00063" summary="settings.py updated with JSX Compile middleware.&#10;&#10;-- 11/02/2017 -- Viral Joshi">
+      <created>1509656243638</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1509656243638</updated>
+    </task>
+    <task id="LOCAL-00064" summary="JSX Compile middleware created.&#10;&#10;-- 11/02/2017 -- Viral Joshi">
+      <created>1509656312827</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1509656312827</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Common fonts updated.&#10;&#10;-- 11/02/2017 -- Viral Joshi">
+      <created>1509656337655</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1509656337655</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Javascript code beautified.&#10;&#10;-- 11/02/2017 -- Viral Joshi">
+      <created>1509656357153</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1509656357153</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Action page layout updated&#10;&#10;-- 11/02/2017 -- Viral Joshi">
+      <created>1509659107244</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1509659107244</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Sign up form updated with dynamic css class.&#10;&#10;-- 11/02/2017 -- Viral Joshi">
+      <created>1509659137317</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1509659137317</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Test home app jsx updated and compiled version was created.&#10;&#10;-- 11/02/2017 -- Viral Joshi">
+      <created>1509659159719</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1509659159719</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Model form helper created with two methods in it.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509725825663</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1509725825663</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Ask question form created.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509725844815</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1509725844815</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Changed ugettext_lazy to ugettext.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509725898890</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1509725898890</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Self context var&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509725915674</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1509725915674</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Compressed JS file.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509725945872</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1509725945872</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Moved common JS code from home.html to base.html file.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509726139537</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1509726139537</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Form class renamed.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509726242530</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1509726242530</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Questions urls included.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509726305513</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1509726305513</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Home page link updated in headers and made it to dynamic links.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509738425353</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1509738425353</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Handler created for Django's default login redirect handler.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509738530342</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1509738530342</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Removed comments.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509738944830</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1509738944830</updated>
+    </task>
+    <task id="LOCAL-00081" summary="App common created.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509826460182</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1509826460182</updated>
+    </task>
+    <task id="LOCAL-00082" summary="settings.py file updated and app Common added in installed apps.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509826609133</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1509826609133</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Questions CSS, JSX and JS file created&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509827086608</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827086608</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Ask question html template created.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509827115823</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827115824</updated>
+    </task>
+    <task id="LOCAL-00085" summary="General get login redirect function updated with optional dict parameter.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509827157757</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827157757</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Common Tag model created.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509827181195</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827181195</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Questions model updated to add tags in questions.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
+      <created>1509827200078</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827200078</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Comments removed.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509827220044</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827220044</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Ask questions view class created.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509827246816</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827246816</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Ask questions url updated.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509827266624</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827266624</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Questions model updated. Git ignore file updated.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509827431273</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1509827431273</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Form helper get json form method updated to check attributes in object to handle errors.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509828584279</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1509828584279</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Ask questions form updated to add tags field.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509828609747</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1509828609747</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Ask questions template updated to create form variable in javascript.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509828642385</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1509828642385</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="824" extended-state="6" />
+    <frame x="0" y="23" width="2560" height="1336" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5015886" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="manage.py@RekhaIo" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.49841145" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32577905" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25070822" sideWeight="0.49841145" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922825" sideWeight="0.5015886" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="manage.py@RekhaIo" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922825" sideWeight="0.49841145" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32922825" sideWeight="0.49841145" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922825" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21182266" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18884121" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18864179" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1182,32 +1111,32 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="React js installed. React js will be used to create some of dynamic views and so CDN links are added.&#10;&#10;-- 10/14/2017 -- Viral Joshi" />
-    <MESSAGE value="Git ignore file created.&#10;&#10;-- 10/16/2017 -- Viral Joshi" />
-    <MESSAGE value="Bable core browser.js file CDN link added.&#10;&#10;-- 10/16/2017 -- Viral Joshi" />
-    <MESSAGE value="Home page html file created.&#10;&#10;-- 10/17/2017 -- Viral Joshi" />
-    <MESSAGE value="Action file login form updated with next url parameter.&#10;&#10;-- 10/17/2017 -- Viral Joshi" />
-    <MESSAGE value="Navigation html file created for general pages. Css file for home page created and common css file updated.&#10;&#10;-- 10/17/2017 -- Viral Joshi" />
-    <MESSAGE value="Redirect and restrict access updated in middleware and comments added.&#10;&#10;-- 10/17/2017 -- Viral Joshi" />
-    <MESSAGE value="Next after login action processor added. Comments added.&#10;&#10;-- 10/17/2017 -- Viral Joshi" />
-    <MESSAGE value="Home page view created. Url updated.&#10;&#10;-- 10/17/2017 -- Viral Joshi" />
-    <MESSAGE value="Homepage updated. Babel cdn updated. Test js file created.&#10;&#10;-- 10/18/2017 -- Viral Joshi" />
-    <MESSAGE value="jsx_compiler file created.&#10;&#10;-- 10/21/2017 -- Viral Joshi" />
-    <MESSAGE value="setup file updated&#10;&#10;-- 10/21/2017 -- Viral Joshi" />
-    <MESSAGE value="JSX Compiler command file created.&#10;&#10;-- 10/21/2017 -- Viral Joshi" />
-    <MESSAGE value="JS files&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
-    <MESSAGE value="Babel js CDN removed.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
-    <MESSAGE value="Compiled home js for react added.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
-    <MESSAGE value="Compress js block added.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
-    <MESSAGE value="Home app jsx updated to test change in compilation using jsx compiler. Compressed js file created to test compressor.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
-    <MESSAGE value="settings.py updated with JSX dirs location and compressor asset folder.&#10;&#10;-- 10/24/2017 -- Viral Joshi" />
-    <MESSAGE value="Accounts html file updated to adjust layout. Accounts css file updated with supporting changes. &#10;&#10;-- 11/01/2017 -- Viral Joshi" />
-    <MESSAGE value="Password reset email template created. Password Reset Helper updated to use correct email template.&#10;&#10;-- 11/01/2017 -- Viral Joshi" />
-    <MESSAGE value="General function created to get login paramed url.&#10;&#10;-- 11/01/2017 -- Viral Joshi" />
-    <MESSAGE value="Password reset template created.&#10;&#10;-- 11/01/2017 -- Viral Joshi" />
-    <MESSAGE value="Password reset form created.&#10;&#10;-- 11/01/2017 -- Viral Joshi" />
-    <MESSAGE value="Password reset action view created.&#10;&#10;-- 11/01/2017 -- Viral Joshi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password reset action view created.&#10;&#10;-- 11/01/2017 -- Viral Joshi" />
+    <MESSAGE value="Model form helper created with two methods in it.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Ask question form created.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Changed ugettext_lazy to ugettext.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Self context var&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Compressed JS file.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Moved common JS code from home.html to base.html file.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Form class renamed.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Questions urls included.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Home page link updated in headers and made it to dynamic links.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Handler created for Django's default login redirect handler.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Removed comments.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="App common created.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="settings.py file updated and app Common added in installed apps.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Questions CSS, JSX and JS file created&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Ask question html template created.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="General get login redirect function updated with optional dict parameter.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Common Tag model created.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Questions model updated to add tags in questions.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
+    <MESSAGE value="Comments removed.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Ask questions view class created.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Ask questions url updated.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Questions model updated. Git ignore file updated.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Form helper get json form method updated to check attributes in object to handle errors.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Ask questions form updated to add tags field.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Ask questions template updated to create form variable in javascript.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ask questions template updated to create form variable in javascript.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1216,25 +1145,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/accounts/migrations/0003_auto_20171013_1911.py" />
-    <entry file="file://$PROJECT_DIR$/accounts/migrations/0002_auto_20171013_1911.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/middleware/clickjacking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/middleware/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="76" column="32" lean-forward="false" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/models.py" />
-    <entry file="file://$PROJECT_DIR$/secure/models.py" />
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-2010535109/_string.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/string.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-374">
@@ -1247,213 +1157,331 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
           <caret line="60" column="40" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/backends.py" />
-    <entry file="file://$PROJECT_DIR$/questions/urls.py" />
+    <entry file="file://$PROJECT_DIR$/static/frameworks/package.json" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/__cdnjs.cloudflare.com_ajax_libs_babel-core_6.1.19_browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="3447" column="72" lean-forward="true" selection-start-line="3447" selection-start-column="72" selection-end-line="3447" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/validators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="109" column="8" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/home.app.js" />
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-2010535109/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="5821" column="0" lean-forward="false" selection-start-line="5821" selection-start-column="0" selection-end-line="5821" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/r/accounts/accounts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/jsx_compiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx_files/accounts/accounts.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/accounts.action.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="49" column="78" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="78" />
+        <state relative-caret-position="492">
+          <caret line="96" column="6" lean-forward="false" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
           <folding>
-            <element signature="e#0#75#0" expanded="false" />
             <element signature="e#380#1308#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/frameworks/package.json" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/__cdnjs.cloudflare.com_ajax_libs_babel-core_6.1.19_browser.js" />
-    <entry file="file://$PROJECT_DIR$/questions/models.py" />
-    <entry file="file://$PROJECT_DIR$/plugins/request_params.py" />
-    <entry file="file://$PROJECT_DIR$/questions/views.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/validators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="109" column="8" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rekha_Io/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-          <folding>
-            <element signature="e#642#683#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/common/_head_nav.html" />
-    <entry file="file://$PROJECT_DIR$/views/common/_head_nav_links.html" />
-    <entry file="file://$PROJECT_DIR$/static/css/common.css" />
-    <entry file="file://$PROJECT_DIR$/RekhaIo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#26#79#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/middleware.py" />
-    <entry file="file://$PROJECT_DIR$/static/css/home.css" />
-    <entry file="file://$PROJECT_DIR$/static/js/home.app.js" />
-    <entry file="file://$PROJECT_DIR$/RekhaIo/management/commands/compile_jsx.py" />
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-2010535109/builtins.py" />
-    <entry file="file://$PROJECT_DIR$/jsx_files/accounts/accounts.jsx" />
-    <entry file="file://$PROJECT_DIR$/static/js/r/accounts/accounts.js" />
-    <entry file="file://$PROJECT_DIR$/plugins/jsx_compiler.py" />
-    <entry file="file://$PROJECT_DIR$/views/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="32" column="96" lean-forward="false" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx_files/home/home.app.jsx" />
-    <entry file="file://$PROJECT_DIR$/static/js/r/home/home.app.js" />
-    <entry file="file://$PROJECT_DIR$/views/home.html" />
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rekha_Io/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="218" column="31" lean-forward="false" selection-start-line="218" selection-start-column="31" selection-end-line="218" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/password_reset_helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="723">
+          <caret line="75" column="46" lean-forward="false" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
           <folding>
             <element signature="e#0#14#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/plugins/user_password_reset.html">
+    <entry file="file://$PROJECT_DIR$/static/js/accounts.action.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="407" column="0" lean-forward="true" selection-start-line="407" selection-start-column="0" selection-end-line="407" selection-end-column="0" />
+        <state relative-caret-position="484">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/backends.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="34" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#26586#26592#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1509582837000" expanded="false" signature="27225:27306" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="27781:27871" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="28469:28498" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="28529:28679" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="28755:28837" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="29640:29714" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="29757:29811" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="29918:30139" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="30340:30379" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="30768:31230" ph="data:" />
-            <marker date="1509582837000" expanded="false" signature="31355:31524" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="31761:31842" ph="..." />
-            <marker date="1509582837000" expanded="false" signature="32317:32407" ph="..." />
+            <element signature="e#56#70#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RekhaIo/management/commands/compile_jsx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="51" column="20" lean-forward="false" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="20" />
+          <folding>
+            <element signature="e#98#142#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/r/home/home.app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/forms/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="105" column="45" lean-forward="true" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="283" column="23" lean-forward="true" selection-start-line="283" selection-start-column="23" selection-end-line="283" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compressed/assets/js/40678d4bf241.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RekhaIo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#26#79#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/accounts/action.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="115" column="65" lean-forward="false" selection-start-line="115" selection-start-column="65" selection-end-line="115" selection-end-column="65" />
+        <state relative-caret-position="305">
+          <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/accounts.action.css">
+    <entry file="file://$PROJECT_DIR$/views/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="44">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/accounts.action.js">
+    <entry file="file://$PROJECT_DIR$/views/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="338">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/contrib/auth/base_user.py">
+    <entry file="file://$PROJECT_DIR$/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="117" column="20" lean-forward="false" selection-start-line="117" selection-start-column="20" selection-end-line="117" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../rekhaio/venv/lib/python3.6/site-packages/django/contrib/auth/hashers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../rekhaio/venv/lib/python3.6/site-packages/django/contrib/auth/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="410" column="24" lean-forward="true" selection-start-line="386" selection-start-column="4" selection-end-line="410" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/accounts/password_reset.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        <state relative-caret-position="616">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="262" column="28" lean-forward="true" selection-start-line="262" selection-start-column="28" selection-end-line="262" selection-end-column="28" />
+        <state relative-caret-position="308">
+          <caret line="201" column="2" lean-forward="false" selection-start-line="201" selection-start-column="2" selection-end-line="201" selection-end-column="2" />
           <folding>
-            <element signature="e#4542#6602#0" expanded="false" />
+            <element signature="e#0#13#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/common/_head_nav_links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/common/_head_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="79" lean-forward="true" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#26#61#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/request_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rekha_Io/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx_files/home/home.app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rekha_Io/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="225" column="44" lean-forward="true" selection-start-line="225" selection-start-column="44" selection-end-line="225" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="99" lean-forward="false" selection-start-line="22" selection-start-column="99" selection-end-line="22" selection-end-column="99" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rekha_Io/general.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
+        <state relative-caret-position="506">
           <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
@@ -1461,13 +1489,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="287" column="48" lean-forward="false" selection-start-line="287" selection-start-column="48" selection-end-line="287" selection-end-column="48" />
+        <state relative-caret-position="88">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/questions.ask.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#26#61#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/form_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/questions/ask_question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -4,6 +4,8 @@ from django.template.response import TemplateResponse
 from django.utils.decorators import method_decorator
 from django.views.generic import TemplateView
 
+from questions.forms import RIAskQuestionForm
+
 
 class RIAskQuestion(TemplateView):
     """
@@ -22,4 +24,7 @@ class RIAskQuestion(TemplateView):
         return self.process(request, *args, **kwargs)
 
     def process(self, request, *args, **kwargs):
+        self.context = {
+            'ask_form': RIAskQuestionForm().get_json_form()
+        }
         return TemplateResponse(request, "questions/ask_question.html", self.context)
