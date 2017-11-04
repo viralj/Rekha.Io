@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'notification',
     'questions',
     'educate',
+    'common',
 ]
 
 MIDDLEWARE = [
