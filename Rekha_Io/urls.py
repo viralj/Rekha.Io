@@ -18,6 +18,7 @@ from django.conf.urls import url, include
 from django.views.generic import TemplateView
 
 from RekhaIo.views import RIHomePage
+from common.http_error import RIError404
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
@@ -35,3 +36,5 @@ urlpatterns = [
     url(r'^$', RIHomePage.as_view(), name="home_page"),
     url(r'^home$', RIHomePage.as_view(), name="home"),
 ]
+
+handler404 = RIError404.as_view()
