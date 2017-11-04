@@ -20,10 +20,11 @@ class RIAskQuestionForm(RIHelperModelForm):
 
     class Meta:
         model = Question
-        fields = ["title", "details"]
+        fields = ["title", "details", "tags"]
 
         title_parent = {"t": "p"}
         details_parent = {"d": "p"}
+        tags_parent = {"d": "p"}
 
         widgets = {
             'title': forms.TextInput(attrs={
@@ -33,10 +34,19 @@ class RIAskQuestionForm(RIHelperModelForm):
                 'maxlength': 250,
                 'data-parent': json.dumps(title_parent)
             }),
-
             'details': forms.TextInput(attrs={
                 'type': 'textarea',
                 'data-field-type': 'textarea',
                 'data-parent': json.dumps(details_parent)
             }),
+            'tags': forms.TextInput(attrs={
+                'type': 'text',
+                'data-field-type': 'text',
+                'autocomplete': 'off',
+                'data-parent': json.dumps(tags_parent)
+            }),
+        }
+
+        labels = {
+            "tags": _("Tags")
         }
