@@ -17,7 +17,7 @@ class Question(models.Model):
     is_archived = models.BooleanField(_('is this question archived?'), default=False)
     date_created = models.DateTimeField(_('date question created'), default=timezone.now)
     last_modified = models.DateTimeField(_('date question modified'), default=timezone.now)
-    tags = models.ManyToManyField(Tag, related_name='questions')
+    tags = models.ManyToManyField(Tag, related_name='questions_tags_set')
 
 
 class Comments(models.Model):
