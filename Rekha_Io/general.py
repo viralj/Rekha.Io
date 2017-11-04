@@ -21,5 +21,5 @@ def two_days_ago():
     return timezone.now() - timezone.timedelta(days=2)
 
 
-def get_ri_login_with_param():
-    return HttpResponseRedirect(reverse('accounts:action') + get_request_param(REQUEST_LOGIN))
+def get_ri_login_with_param(optional: dict = None):
+    return HttpResponseRedirect(reverse('accounts:action') + get_request_param(REQUEST_LOGIN, optional))
