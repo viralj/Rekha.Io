@@ -10,7 +10,8 @@
 {% block head_js %}
     {% compress js inline %}
         <script>
-            let RIAskQF = {% if ask_form %}{{ ask_form|safe }}{% else %}null{% endif %};
+            let RIAskQ = {};
+            RIAskQ['form'] = {% if ask_form %}{{ ask_form|safe }}{% else %}null{% endif %};
         </script>
     {% endcompress %}
 {% endblock %}
