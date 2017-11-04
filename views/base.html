@@ -10,6 +10,7 @@
         <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" href="{% static 'css/common.css' %}">
+        <meta name="csrf_token" content="{{ csrf_token }}"/>
         {% block head %}{% endblock %}
         {% block head_js %}{% endblock %}
         <style id="antiClickjack">body{display:none !important;}</style>
