@@ -7,7 +7,13 @@
 {% endblock %}
 
 
-{% block head_js %}{% endblock %}
+{% block head_js %}
+    {% compress js inline %}
+        <script>
+            let RIAskQF = {% if ask_form %}{{ ask_form|safe }}{% else %}null{% endif %};
+        </script>
+    {% endcompress %}
+{% endblock %}
 
 
 {% block header %}
