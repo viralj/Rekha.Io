@@ -1,0 +1,30 @@
+{% extends 'base.html' %}{% load static %}{% load compress %}
+
+{% block title %}Rekha.Io{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/questions.ask.css' %}">
+{% endblock %}
+
+
+{% block head_js %}{% endblock %}
+
+
+{% block header %}
+    {% include 'common/_head_nav_links.html' %}
+{% endblock %}
+
+
+{% block main %}
+    <div id="questions-ask-app"></div>
+{% endblock %}
+
+
+{% block footer %}{% endblock %}
+
+
+{% block footer_js %}
+    {% compress js %}
+        <script type="text/javascript" src="{% static 'js/r/questions/questions.ask.js' %}"></script>
+    {% endcompress %}
+{% endblock %}
