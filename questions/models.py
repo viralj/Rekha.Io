@@ -4,6 +4,8 @@ from django.utils.translation import ugettext as _
 
 
 # Create your models here.
+from common.models import Tag
+
 
 class Question(models.Model):
     """
@@ -15,6 +17,7 @@ class Question(models.Model):
     is_archived = models.BooleanField(_('is this question archived?'), default=False)
     date_created = models.DateTimeField(_('date question created'), default=timezone.now)
     last_modified = models.DateTimeField(_('date question modified'), default=timezone.now)
+    tags = models.ManyToManyField(Tag, related_name='questions')
 
 
 class Comments(models.Model):
