@@ -1,6 +1,9 @@
 # Create your views here.
+import json
+
 from django.contrib.auth.decorators import login_required
 from django.template.response import TemplateResponse
+from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views.generic import TemplateView
 
@@ -25,6 +28,9 @@ class RIAskQuestion(TemplateView):
 
     def process(self, request, *args, **kwargs):
         self.context = {
-            'ask_form': RIAskQuestionForm().get_json_form()
+            'ri_ask_q': json.dumps({
+                'form': RIAskQuestionForm().get_form_as_list(),
+                'post': reverse('questions:ask_action')
+            }),
         }
         return TemplateResponse(request, "questions/ask_question.html", self.context)
