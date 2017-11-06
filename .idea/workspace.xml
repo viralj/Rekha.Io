@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="Questions urls included.&#10;&#10;-- 11/03/2017 -- Viral Joshi">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/RekhaIo.iml" afterPath="$PROJECT_DIR$/.idea/RekhaIo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/questions/views.py" afterPath="$PROJECT_DIR$/questions/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx" afterPath="$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/r/questions/questions.ask.js" afterPath="$PROJECT_DIR$/static/js/r/questions/questions.ask.js" />
     </list>
     <list id="aaa39bba-7c44-4031-9f45-f4d13b2d91cd" name="settings.py" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rekha_Io/settings.py" afterPath="$PROJECT_DIR$/Rekha_Io/settings.py" />
@@ -27,21 +26,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/questions/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="660">
+              <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ask_question.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/questions/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ask_question.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/questions/ask_question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="340">
+              <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -50,8 +59,8 @@
       <file leaf-file-name="questions.ask.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="99" lean-forward="false" selection-start-line="22" selection-start-column="99" selection-end-line="22" selection-end-column="99" />
+            <state relative-caret-position="220">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,8 +91,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="220">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,10 +101,10 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/questions/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="129">
+              <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +113,8 @@
       <file leaf-file-name="form_helper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/form_helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="558">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -146,13 +155,16 @@
       <find>action_messages</find>
       <find>data-class</find>
       <find>login</find>
+      <find>self.x</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
       <replace>data_class</replace>
+      <replace>x</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -191,7 +203,6 @@
         <option value="$PROJECT_DIR$/RekhaIo/views.py" />
         <option value="$PROJECT_DIR$/views/base.html" />
         <option value="$PROJECT_DIR$/views/home.html" />
-        <option value="$PROJECT_DIR$/questions/urls.py" />
         <option value="$PROJECT_DIR$/Rekha_Io/urls.py" />
         <option value="$PROJECT_DIR$/accounts/urls.py" />
         <option value="$PROJECT_DIR$/Rekha_Io/general.py" />
@@ -200,15 +211,16 @@
         <option value="$PROJECT_DIR$/views/common/_head_nav_links.html" />
         <option value="$PROJECT_DIR$/static/css/questions.ask.css" />
         <option value="$PROJECT_DIR$/jsx_files/home/home.app.jsx" />
-        <option value="$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx" />
         <option value="$PROJECT_DIR$/Rekha_Io/settings.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/questions/forms.py" />
         <option value="$PROJECT_DIR$/common/models.py" />
         <option value="$PROJECT_DIR$/questions/models.py" />
+        <option value="$PROJECT_DIR$/questions/forms.py" />
+        <option value="$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx" />
+        <option value="$PROJECT_DIR$/views/questions/ask_question.html" />
+        <option value="$PROJECT_DIR$/questions/urls.py" />
         <option value="$PROJECT_DIR$/plugins/form_helper.py" />
         <option value="$PROJECT_DIR$/questions/views.py" />
-        <option value="$PROJECT_DIR$/views/questions/ask_question.html" />
       </list>
     </option>
   </component>
@@ -322,16 +334,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/RekhaIo.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Rekha_Io/general.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/accounts/forms.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/accounts/urls.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/accounts/views.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/plugins/password_reset_helper.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/static/css/accounts.action.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/accounts/action.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/base.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -339,8 +342,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/accounts/password_reset.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/plugins/user_password_reset.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -712,62 +713,6 @@
       <option name="presentableId" value="Default" />
       <updated>1506635296494</updated>
     </task>
-    <task id="LOCAL-00046" summary="JSX Compiler command file created.&#10;&#10;-- 10/21/2017 -- Viral Joshi">
-      <created>1508611980280</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1508611980280</updated>
-    </task>
-    <task id="LOCAL-00047" summary="JS files&#10;&#10;-- 10/24/2017 -- Viral Joshi">
-      <created>1508859426873</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1508859426873</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Babel js CDN removed.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
-      <created>1508859650636</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1508859650636</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Compiled home js for react added.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
-      <created>1508859666942</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1508859666942</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Compress js block added.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
-      <created>1508860848977</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1508860848978</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Home app jsx updated to test change in compilation using jsx compiler. Compressed js file created to test compressor.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
-      <created>1508860903147</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1508860903147</updated>
-    </task>
-    <task id="LOCAL-00052" summary="settings.py updated with JSX dirs location and compressor asset folder.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
-      <created>1508860960939</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1508860960939</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Deleting JS files.&#10;&#10;-- 10/24/2017 -- Viral Joshi">
-      <created>1508860979325</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1508860979325</updated>
-    </task>
     <task id="LOCAL-00054" summary="Middleware modified to clear test code.&#10;&#10;-- 10/27/2017 -- Viral Joshi">
       <created>1509148763387</created>
       <option name="number" value="00054" />
@@ -1055,7 +1000,63 @@
       <option name="project" value="LOCAL" />
       <updated>1509828642385</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Ask questions view updated with form.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509828660385</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1509828660385</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Modified form data in js.&#10;&#10;-- 11/04/2017 -- Viral Joshi">
+      <created>1509836611336</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1509836611336</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Removed class variable to avoid problem of missing data.&#10;&#10;-- 11/06/2017 -- Viral Joshi">
+      <created>1510006159546</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1510006159546</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Removed json dumps and added class data in parent variable.&#10;&#10;-- 11/06/2017 -- Viral Joshi">
+      <created>1510006190641</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1510006190641</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Form variable updated.&#10;&#10;-- 11/06/2017 -- Viral Joshi">
+      <created>1510006847905</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1510006847906</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Comments added.&#10;&#10;-- 11/06/2017 -- Viral Joshi">
+      <created>1510006865328</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1510006865328</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Class context variable updated for RIAskQuestion class&#10;&#10;-- 11/06/2017 -- Viral Joshi">
+      <created>1510006903871</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1510006903871</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Ask question action url created.&#10;&#10;-- 11/06/2017 -- Viral Joshi">
+      <created>1510006919531</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1510006919531</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1111,14 +1112,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Model form helper created with two methods in it.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
-    <MESSAGE value="Ask question form created.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
-    <MESSAGE value="Changed ugettext_lazy to ugettext.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
-    <MESSAGE value="Self context var&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
-    <MESSAGE value="Compressed JS file.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
-    <MESSAGE value="Moved common JS code from home.html to base.html file.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
-    <MESSAGE value="Form class renamed.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
-    <MESSAGE value="Questions urls included.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
     <MESSAGE value="Home page link updated in headers and made it to dynamic links.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
     <MESSAGE value="Handler created for Django's default login redirect handler.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
     <MESSAGE value="Removed comments.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
@@ -1136,7 +1129,15 @@
     <MESSAGE value="Form helper get json form method updated to check attributes in object to handle errors.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
     <MESSAGE value="Ask questions form updated to add tags field.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
     <MESSAGE value="Ask questions template updated to create form variable in javascript.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ask questions template updated to create form variable in javascript.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Ask questions view updated with form.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Modified form data in js.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
+    <MESSAGE value="Removed class variable to avoid problem of missing data.&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
+    <MESSAGE value="Removed json dumps and added class data in parent variable.&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
+    <MESSAGE value="Form variable updated.&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
+    <MESSAGE value="Comments added.&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
+    <MESSAGE value="Class context variable updated for RIAskQuestion class&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
+    <MESSAGE value="Ask question action url created.&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ask question action url created.&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1361,14 +1362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -1461,30 +1454,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/questions/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#48#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="99" lean-forward="false" selection-start-line="22" selection-start-column="99" selection-end-line="22" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rekha_Io/general.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="27" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="27" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1493,22 +1468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/questions.ask.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1523,38 +1482,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/form_helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="129">
+          <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/questions/views.py">
+    <entry file="file://$PROJECT_DIR$/views/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="572">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/questions.ask.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/questions/ask_question.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="340">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/form_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
           <folding />
         </state>
       </provider>

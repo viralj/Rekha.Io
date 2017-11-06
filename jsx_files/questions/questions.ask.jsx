@@ -1,5 +1,18 @@
 class App extends React.Component {
+
+    createForm(){
+        let form_fields = [];
+
+        for(let i=0;i<RIAskQ.form.length;i++){
+            console.log(RIAskQ.form[i]);
+        }
+
+    }
+
     render() {
+
+        this.createForm();
+
         return (
             <div className="container">
                 <div className="row"></div>
