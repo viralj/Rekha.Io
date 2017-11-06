@@ -10,5 +10,9 @@ urlpatterns = [
     # to display signup and login forms
     # url(r'^action/?$', RIAccountsAction.as_view(), name="action"),
 
-    url(r'^ask?$', RIAskQuestion.as_view(), name="ask"),
+    # Ask question page
+    url(r'^ask$', RIAskQuestion.as_view(), name="ask"),
+
+    # Ask question post action page
+    url(r'^ask/Action$', RIAskQuestion.as_view(), name="ask_action"),
 ]
