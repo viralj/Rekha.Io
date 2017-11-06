@@ -13,13 +13,29 @@ class RIHelperModelForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(RIHelperModelForm, self).__init__(*args, **kwargs)
 
-    def get_json_form(self):
+    def get_form_as_list(self):
+        """
+        To create form as list object and return
+        :return: form as list
+        """
         result = []
         for name, field in self.fields.items():
             result.append({'id': "id_{}".format(name), 'data': self.field_to_dict(field)})
-        return json.dumps(result)
+        return result
+
+    def get_form_as_json(self):
+        """
+        To create form as json object and return
+        :return: form as json
+        """
+        return json.dumps(self.get_form_as_list())
 
     def field_to_dict(self, field):
+        """
+        Creating dictionary object of field and returning dictonary
+        :param field:
+        :return: dictionary of form
+        """
         input_field = {}
         x = {}
         if not DEBUG:
