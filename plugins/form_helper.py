@@ -77,8 +77,8 @@ class RIHelperModelForm(forms.ModelForm):
             x.update({"attrs": field.widget.attrs})
 
         # type object for for input
-        if hasattr(field.widget.attrs, 'data-field-type'):
+        if 'data-field-type' in field.widget.attrs:
             input_field.update({"type": field.widget.attrs['data-field-type']})
 
-        x.update({"input": input_field})
+        x.update({"input_field": input_field})
         return x
