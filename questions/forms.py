@@ -20,9 +20,9 @@ class RIAskQuestionForm(RIHelperModelForm):
         model = Question
         fields = ["title", "details", "tags"]
 
-        title_parent = {"class": "col s12 m12 l12"}
-        details_parent = {"class": "col s12 m12 l12"}
-        tags_parent = {"class": "col s12 m12 l12"}
+        title_parent = {"class": "col s12 m12 l12", "id": "title"}
+        details_parent = {"class": "col s12 m12 l12", "id": "details"}
+        tags_parent = {"class": "col s12 m12 l12", "id": "tags"}
 
         widgets = {
             'title': forms.TextInput(attrs={
@@ -30,18 +30,18 @@ class RIAskQuestionForm(RIHelperModelForm):
                 'data-field-type': 'text',
                 'autocomplete': 'off',
                 'maxlength': 250,
-                'data-parent': title_parent
+                'data_parent': title_parent
             }),
             'details': forms.TextInput(attrs={
                 'type': 'textarea',
                 'data-field-type': 'textarea',
-                'data-parent': details_parent
+                'data_parent': details_parent
             }),
             'tags': forms.TextInput(attrs={
                 'type': 'text',
                 'data-field-type': 'text',
                 'autocomplete': 'off',
-                'data-parent': tags_parent
+                'data_parent': tags_parent
             }),
         }
 
