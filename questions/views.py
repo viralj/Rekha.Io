@@ -31,7 +31,7 @@ class RIAskQuestion(TemplateView):
         self.context = {
             'ri_ask_q': json.dumps({
                 'form': RIAskQuestionForm().get_form_as_list(),
-                'post': reverse('questions:ask_action')
+                'post': reverse('questions:ask_action'),
             }),
         }
         return TemplateResponse(request, "questions/ask_question.html", self.context)

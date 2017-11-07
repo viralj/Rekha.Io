@@ -7,8 +7,6 @@ from django.conf.urls import url
 from questions.views import *
 
 urlpatterns = [
-    # to display signup and login forms
-    # url(r'^action/?$', RIAccountsAction.as_view(), name="action"),
 
     # Ask question page
     url(r'^ask$', RIAskQuestion.as_view(), name="ask"),
