@@ -1,9 +1,5 @@
 from setuptools import setup, find_packages
 
-"""
-Created by Viral Joshi.
-List of install requirements and other setup information.
-"""
 
 INSTALL_REQUIREMENTS = [
     'Django>=2.0',
