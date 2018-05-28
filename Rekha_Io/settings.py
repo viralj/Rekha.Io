@@ -95,7 +95,7 @@ if DEBUG:
             'HOST': 'localhost',
             'PORT': '3306',
             'OPTIONS': {
-                'init_command': 'SET innodb_strict_mode=1',
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             },
         },
     }
@@ -109,7 +109,7 @@ else:
             'HOST': 'localhost',
             'PORT': '3306',
             'OPTIONS': {
-                'init_command': 'SET innodb_strict_mode=1',
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
             },
         },
     }
@@ -158,6 +158,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 # JSX Files dir
 JSX_FILES_DIR = os.path.join(BASE_DIR, 'jsx_files')
 JSX_FILES_COMPILED_DIR = os.path.join(BASE_DIR, 'static/js/r')
+JSX_COMPILE_FILES = False
 
 # User authentication model
 AUTH_USER_MODEL = 'accounts.User'

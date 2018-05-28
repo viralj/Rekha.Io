@@ -2,7 +2,7 @@ import os
 
 from react import jsx
 
-from Rekha_Io.settings import JSX_FILES_DIR, JSX_FILES_COMPILED_DIR
+from Rekha_Io.settings import JSX_FILES_DIR, JSX_FILES_COMPILED_DIR, JSX_COMPILE_FILES
 
 
 class RIJSXCompiler(object):
@@ -13,7 +13,8 @@ class RIJSXCompiler(object):
 
     def __init__(self):
         self.x = os.walk(JSX_FILES_DIR)
-        self.process()
+        if JSX_COMPILE_FILES:
+            self.process()
 
     def process(self):
         one, two, three = zip(*self.x)
