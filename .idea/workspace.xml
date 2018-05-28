@@ -5,7 +5,6 @@
     <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/RekhaIo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RekhaIo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -36,8 +35,8 @@
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="25">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -113,6 +112,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Viral Joshi &lt;viraljoshi23@live.com&gt;" />
+      </list>
+    </option>
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -188,7 +192,7 @@
     <option name="height" value="1336" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -199,22 +203,19 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Rekha.Io" type="cbb8eebc:String" user="Rekha.Io" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Default">
+          <expand>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Rekha.Io" type="cbb8eebc:String" user="Rekha.Io" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Rekha.Io" type="cbb8eebc:String" user="Rekha.Io" />
               <item name=".idea" type="cbb8eebc:String" user=".idea" />
-              <item name="dictionaries" type="cbb8eebc:String" user="dictionaries" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Rekha.Io" type="cbb8eebc:String" user="Rekha.Io" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
-              <item name="inspectionProfiles" type="cbb8eebc:String" user="inspectionProfiles" />
             </path>
           </expand>
           <select />
@@ -337,27 +338,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506635296494</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Forgot password action class added in view.&#10;&#10;-- 10/27/2017 -- Viral Joshi">
-      <created>1509148784003</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1509148784003</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Plugins backend modified to check for existing unused email verification code. &#10;&#10;-- 10/27/2017 -- Viral Joshi">
-      <created>1509148836474</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1509148836474</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Password reset helper created. &#10;&#10;-- 10/31/2017 -- Viral Joshi">
-      <created>1509484310845</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1509484310845</updated>
     </task>
     <task id="LOCAL-00058" summary="Password reset helper added in action view.&#10;&#10;-- 10/31/2017 -- Viral Joshi">
       <created>1509484354510</created>
@@ -681,7 +661,28 @@
       <option name="project" value="LOCAL" />
       <updated>1527468933027</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Added test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi">
+      <created>1527469765420</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1527469765420</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Added test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi">
+      <created>1527469786768</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1527469786768</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Updated test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi">
+      <created>1527470651587</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1527470651588</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -691,11 +692,11 @@
       <window_info anchor="bottom" id="TODO" order="14" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5015886" side_tool="true" weight="0.32922825" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49841145" visible="true" weight="0.30833972" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="2" sideWeight="0.49841145" visible="true" weight="0.30833972" />
       <window_info anchor="bottom" id="Python Console" order="5" weight="0.32922825" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.21117061" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32922825" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18710938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18710938" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -748,8 +749,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Handler created for Django's default login redirect handler.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
-    <MESSAGE value="Removed comments.&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
     <MESSAGE value="App common created.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
     <MESSAGE value="settings.py file updated and app Common added in installed apps.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
     <MESSAGE value="Questions CSS, JSX and JS file created&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
@@ -773,7 +772,9 @@
     <MESSAGE value="Class context variable updated for RIAskQuestion class&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
     <MESSAGE value="Ask question action url created.&#10;&#10;-- 11/06/2017 -- Viral Joshi" />
     <MESSAGE value="Updated min django version.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated min django version.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
+    <MESSAGE value="Added test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
+    <MESSAGE value="Updated test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1100,8 +1101,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="25">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
