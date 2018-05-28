@@ -102,7 +102,7 @@ class UserAccountAction(models.Model):
     ACCOUNT_PASSWORD_RECOVERY = 1
 
     unique_code = models.CharField(_('unique code'), max_length=254, null=False)
-    belongs_to_user = models.ForeignKey('User', null=False, help_text=_('belongs to user'))
+    belongs_to_user = models.ForeignKey('User', null=False, help_text=_('belongs to user'), on_delete=models.CASCADE)
     action_type = models.IntegerField(_('action type'), null=False)
     date_created = models.DateTimeField(_('date created'), auto_now_add=True, null=False)
     expires = models.DateTimeField(_('expires'), default=None, null=True)

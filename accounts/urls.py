@@ -6,6 +6,8 @@ from django.conf.urls import url
 
 from accounts.views import *
 
+app_name = "accounts"
+
 urlpatterns = [
 
     # to display signup and login forms
@@ -31,7 +33,8 @@ urlpatterns = [
     url(r'^action/Request$', RIAccountsActionRequest.as_view(), name="action_request"),
 
     # to process password reset
-    url(r'^action/reset/(?P<username>[\w.]{5,15})/(?P<unique_code>[\w]{0,255})$', RIAccountsActionPasswordReset.as_view(),
+    url(r'^action/reset/(?P<username>[\w.]{5,15})/(?P<unique_code>[\w]{0,255})$',
+        RIAccountsActionPasswordReset.as_view(),
         name="action_reset"),
 
 ]

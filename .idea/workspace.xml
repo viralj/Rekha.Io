@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="aaa39bba-7c44-4031-9f45-f4d13b2d91cd" name="settings.py" comment="" />
+    <list id="f8fab5bc-2934-4fe5-9787-59e851824b76" name="ignored" comment="">
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questions/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secure/migrations/0001_initial.py" afterDir="false" />
+    </list>
     <list default="true" id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/RekhaIo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RekhaIo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rekha_Io/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rekha_Io/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rekha_Io/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rekha_Io/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/questions/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/questions/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/questions/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/secure/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/secure/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/r/accounts/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/r/accounts/accounts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/r/home/home.app.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/r/home/home.app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/r/questions/questions.ask.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/r/questions/questions.ask.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,25 +45,16 @@
         <entry file="file://$PROJECT_DIR$/questions/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/setup.py">
+      <file leaf-file-name="accounts.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/js/r/accounts/accounts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/questions/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="75">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -53,7 +62,7 @@
       <file leaf-file-name="ask_question.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/questions/ask_question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="340">
               <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
             </state>
           </provider>
@@ -123,8 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plugins/request_params.py" />
-        <option value="$PROJECT_DIR$/views/accounts/test.html" />
         <option value="/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/contrib/auth/__init__.py" />
         <option value="$PROJECT_DIR$/accounts/backend.py" />
         <option value="$PROJECT_DIR$/accounts/backends.py" />
@@ -134,8 +141,6 @@
         <option value="$PROJECT_DIR$/plugins/task.py" />
         <option value="$PROJECT_DIR$/Rekha_Io/celery.py" />
         <option value="$PROJECT_DIR$/Rekha_Io/__init__.py" />
-        <option value="$PROJECT_DIR$/secure/models.py" />
-        <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/plugins/models.py" />
         <option value="$PROJECT_DIR$/static/css/home.css" />
         <option value="$PROJECT_DIR$/static/js/home.app.js" />
@@ -148,32 +153,36 @@
         <option value="$PROJECT_DIR$/static/css/accounts.action.css" />
         <option value="$PROJECT_DIR$/static/css/common.css" />
         <option value="$PROJECT_DIR$/plugins/middleware.py" />
-        <option value="$PROJECT_DIR$/static/js/r/home/home.app.js" />
         <option value="$PROJECT_DIR$/accounts/forms.py" />
         <option value="$PROJECT_DIR$/views/accounts/action.html" />
         <option value="$PROJECT_DIR$/RekhaIo/views.py" />
         <option value="$PROJECT_DIR$/views/base.html" />
         <option value="$PROJECT_DIR$/views/home.html" />
-        <option value="$PROJECT_DIR$/Rekha_Io/urls.py" />
-        <option value="$PROJECT_DIR$/accounts/urls.py" />
         <option value="$PROJECT_DIR$/Rekha_Io/general.py" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/views/common/_head_nav.html" />
         <option value="$PROJECT_DIR$/views/common/_head_nav_links.html" />
         <option value="$PROJECT_DIR$/static/css/questions.ask.css" />
         <option value="$PROJECT_DIR$/jsx_files/home/home.app.jsx" />
-        <option value="$PROJECT_DIR$/Rekha_Io/settings.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/common/models.py" />
-        <option value="$PROJECT_DIR$/questions/models.py" />
         <option value="$PROJECT_DIR$/questions/forms.py" />
         <option value="$PROJECT_DIR$/jsx_files/questions/questions.ask.jsx" />
         <option value="$PROJECT_DIR$/views/questions/ask_question.html" />
-        <option value="$PROJECT_DIR$/questions/urls.py" />
         <option value="$PROJECT_DIR$/plugins/form_helper.py" />
         <option value="$PROJECT_DIR$/questions/views.py" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/secure/models.py" />
+        <option value="$PROJECT_DIR$/Rekha_Io/settings.py" />
+        <option value="$PROJECT_DIR$/questions/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/urls.py" />
+        <option value="$PROJECT_DIR$/Rekha_Io/urls.py" />
+        <option value="$PROJECT_DIR$/static/js/r/questions/questions.ask.js" />
+        <option value="$PROJECT_DIR$/questions/models.py" />
+        <option value="$PROJECT_DIR$/static/js/r/home/home.app.js" />
+        <option value="$PROJECT_DIR$/static/js/r/accounts/accounts.js" />
       </list>
     </option>
   </component>
@@ -227,6 +236,11 @@
             <path>
               <item name="Rekha.Io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rekha.Io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rekha.Io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rekha.Io" type="462c0819:PsiDirectoryNode" />
+              <item name="Rekha_Io" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,24 +348,11 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="60514a51-8be8-45ab-b72c-37a4218cecbd" name="Default" comment="" />
+      <changelist id="f8fab5bc-2934-4fe5-9787-59e851824b76" name="ignored" comment="" />
       <created>1506635296494</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506635296494</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Password reset helper added in action view.&#10;&#10;-- 10/31/2017 -- Viral Joshi">
-      <created>1509484354510</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1509484354511</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Urls updated for Account Action Request and test Reset url added.&#10;&#10;-- 10/31/2017 -- Viral Joshi">
-      <created>1509484381497</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1509484381497</updated>
     </task>
     <task id="LOCAL-00060" summary="Time difference function added, to get time of two days ago.&#10;&#10;-- 10/31/2017 -- Viral Joshi">
       <created>1509484423812</created>
@@ -682,7 +683,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527470651588</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Deleted test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi">
+      <created>1527470671621</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1527470671621</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Deleted test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi">
+      <created>1527470713206</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1527470713206</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -690,13 +705,14 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5015886" side_tool="true" weight="0.32922825" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5019873" side_tool="true" weight="0.32831088" />
+      <window_info anchor="bottom" id="manage.py@RekhaIo" order="1" sideWeight="0.49801272" weight="0.32831088" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="2" sideWeight="0.49841145" visible="true" weight="0.30833972" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="2" sideWeight="0.49841145" visible="true" weight="0.30769232" />
       <window_info anchor="bottom" id="Python Console" order="5" weight="0.32922825" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.21117061" />
+      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49880764" weight="0.32672483" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32922825" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18710938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19038156" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -708,7 +724,6 @@
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="manage.py@RekhaIo" order="1" sideWeight="0.49841145" weight="0.32922825" />
       <window_info anchor="bottom" id="Debug Logs" order="3" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Execute Anonymous" order="6" />
@@ -749,7 +764,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="App common created.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
     <MESSAGE value="settings.py file updated and app Common added in installed apps.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
     <MESSAGE value="Questions CSS, JSX and JS file created&#10;&#10;-- 11/03/2017 -- Viral Joshi" />
     <MESSAGE value="Ask question html template created.&#10;&#10;-- 11/04/2017 -- Viral Joshi" />
@@ -774,7 +788,8 @@
     <MESSAGE value="Updated min django version.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
     <MESSAGE value="Added test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
     <MESSAGE value="Updated test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
+    <MESSAGE value="Deleted test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted test comment.&#10;&#10;-- 05/27/2018 -- Viral Joshi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -782,41 +797,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugins/jsx_compiler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsx_files/accounts/accounts.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/accounts.action.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/password_reset_helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="723">
@@ -856,13 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="51" column="20" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/r/home/home.app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -932,20 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rekha_Io/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsx_files/home/home.app.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -955,13 +914,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rekha_Io/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="225" column="44" lean-forward="true" selection-start-line="225" selection-start-column="44" selection-end-line="225" selection-end-column="44" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rekha_Io/general.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -974,16 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,20 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/questions/ask_question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questions/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -1092,17 +1020,104 @@
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/questions/views.py">
+    <entry file="file://$PROJECT_DIR$/questions/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="375">
+          <caret line="17" lean-forward="true" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rekha_Io/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="250">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Rekha_Io/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/django2.0/Lib/site-packages/django/urls/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/r/questions/questions.ask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secure/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="62" column="77" selection-start-line="62" selection-start-column="77" selection-end-line="62" selection-end-column="77" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/questions/ask_question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/r/home/home.app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questions/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/r/accounts/accounts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

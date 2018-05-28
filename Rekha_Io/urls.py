@@ -20,6 +20,7 @@ from django.views.generic import TemplateView
 from RekhaIo.views import RIHomePage
 from common.http_error import RIError404
 
+app_name = "Rekha_Io"
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
 

@@ -1,6 +1,5 @@
 from setuptools import setup, find_packages
 
-
 INSTALL_REQUIREMENTS = [
     'Django>=2.0',
     'mysqlclient>=1.3.10',

@@ -6,6 +6,7 @@ from django.conf.urls import url
 
 from questions.views import *
 
+app_name = "questions"
 urlpatterns = [
 
     # Ask question page
