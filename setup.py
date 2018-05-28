@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 INSTALL_REQUIREMENTS = [
-    'Django>=1.11',
+    'Django>=2.0',
     'mysqlclient>=1.3.10',
     'setuptools>=36.2.2',
     'pytz>=2017.2',
@@ -22,7 +22,7 @@ CLASSIFIERS = [
     'Topic :: Software Development :: Libraries :: Application Frameworks',
     'Programming Language :: Python :: 3.6',
     'Framework :: Django',
-    'Framework :: Django :: 1.11',
+    'Framework :: Django :: 2.0',
 ]
 
 setup(
