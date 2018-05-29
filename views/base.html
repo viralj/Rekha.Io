@@ -8,7 +8,7 @@
         <link rel="dns-prefetch" href="//ajax.googleapis.com">
         <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
         <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
         <link rel="stylesheet" href="{% static 'css/common.css' %}">
         <meta name="csrf_token" content="{{ csrf_token }}"/>
         {% block head %}{% endblock %}
@@ -29,10 +29,10 @@
             {% block footer %}{% endblock %}
         </footer>
     <script crossorigin src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script crossorigin src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script type="text/javascript">$(".button-collapse").sideNav();$(".dropdown-button").dropdown();</script>
+    <script crossorigin src="//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+{#    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>#}
+{#    <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>#}
+    <script type="text/javascript">$(document).ready(function () {$('.sidenav').sidenav();$('.dropdown-trigger').dropdown();});</script>
     {% block footer_js %}{% endblock %}
     </body>
     </html>

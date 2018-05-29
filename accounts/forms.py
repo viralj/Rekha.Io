@@ -42,11 +42,13 @@ class RIUserCreationForm(forms.ModelForm):
                 'type': 'email',
                 'autocomplete': 'off',
                 'data_class': 'col s12 m8 l8 offset-m2 offset-l2',
+                'id':'register_email',
             }),
             'password': forms.TextInput(attrs={
                 'type': 'password',
                 'minlength': '10',
                 'data_class': 'col s12 m4 l4',
+                'id': 'register_password'
             }),
             'username': forms.TextInput(attrs={
                 'type': 'text',
@@ -139,7 +141,7 @@ class RIUserLoginForm(AuthenticationForm):
     username = UsernameField(
         max_length=255,
         min_length=6,
-        widget=forms.TextInput(attrs={'autofocus': False, 'autocomplete': 'off'}),
+        widget=forms.TextInput(attrs={'autofocus': False, 'autocomplete': 'off', 'id':"login_username"}),
     )
     password = forms.CharField(
         label=_("Password"),

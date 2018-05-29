@@ -9,9 +9,7 @@
 
 {% block head_js %}
     {% compress js inline %}
-        <script>
-            let RIAskQ = {% if ri_ask_q %}{{ ri_ask_q|safe }}{% else %}null{% endif %};
-        </script>
+
     {% endcompress %}
 {% endblock %}
 
@@ -22,15 +20,84 @@
 
 
 {% block main %}
-    <div id="questions-ask-app"></div>
+    <div class="container">
+        <div class="row"></div>
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="row">
+                    <div class="col s12 m3 l3 col-content right hide-on-small-only">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Item</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m9 l9 col-content">
+                        <div class="card">
+                            <div class="card-content">
+                                <span class="card-title">Ask question</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="row divider"></div>
+                                <div class="row">
+                                    <form method="post" class="col s12" action="{{ post }}">
+                                        {% for f in form %}
+                                            {% if f.field.widget.attrs.extra.chip %}
+                                                <div class="row">
+                                                    <div class="input-field {{ f.field.widget.attrs.data_parent.class }}">
+                                                        {{ f }}
+                                                    </div>
+                                                </div>
+                                                <script>let REMOVE_FIELD_ATTR = '#{{ f.auto_id }}';</script>
+                                            {% else %}
+                                                <div class="row">
+                                                    <div class="input-field {{ f.field.widget.attrs.data_parent.class }}">
+                                                        {{ f }}
+                                                        {{ f.label_tag }}
+                                                    </div>
+                                                </div>
+                                            {% endif %}
+                                        {% endfor %}
+                                        <div class="row right">
+                                            <button class="btn waves-effect waves-light blue darken-1" type="submit" name="action">
+                                                <span>Submit</span>
+                                                <i class="material-icons right">send</i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 
 
-{% block footer %}{% endblock %}
-
+{% block footer %}
+    {% include 'common/_footer.html' %}
+{% endblock %}
 
 {% block footer_js %}
-    {% compress js %}
-        <script type="text/javascript" src="{% static 'js/r/questions/questions.ask.js' %}"></script>
+    {% compress js inline %}
+        <script>
+            $(document).ready(function () {
+                if (REMOVE_FIELD_ATTR !== undefined) {
+                    $(REMOVE_FIELD_ATTR).removeAttr('type');
+                }
+                $('.chips').chips();
+                $('.chips-placeholder').chips({
+                    placeholder: 'Enter a tag',
+                    secondaryPlaceholder: '+Tag',
+                    limit: 5,
+                });
+            });
+        </script>
     {% endcompress %}
 {% endblock %}

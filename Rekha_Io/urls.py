@@ -31,7 +31,7 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls', namespace="accounts"), name="accounts"),
 
     # Questions urls
-    url(r'^questions/', include('questions.urls', namespace="questions"), name="questions"),
+    url(r'^question/', include('questions.urls', namespace="questions"), name="questions"),
 
     # home page
     url(r'^$', RIHomePage.as_view(), name="home_page"),

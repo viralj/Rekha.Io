@@ -20,28 +20,30 @@ class RIAskQuestionForm(RIHelperModelForm):
         model = Question
         fields = ["title", "details", "tags"]
 
-        title_parent = {"class": "col s12 m12 l12", "id": "title"}
-        details_parent = {"class": "col s12 m12 l12", "id": "details"}
-        tags_parent = {"class": "col s12 m12 l12", "id": "tags"}
-
+        title_parent = {"class": "input-field col s12 m12 l12", "id": "title"}
+        details_parent = {"class": "input-field col s12 m12 l12", "id": "details"}
+        tags_parent = {"class": "chips chips-placeholder input-field col s12 m12 l12", "id": "tags"}
         widgets = {
             'title': forms.TextInput(attrs={
                 'type': 'text',
+                'class': 'validate',
                 'data-field-type': 'text',
                 'autocomplete': 'off',
                 'maxlength': 250,
                 'data_parent': title_parent
             }),
-            'details': forms.TextInput(attrs={
+            'details': forms.Textarea(attrs={
                 'type': 'textarea',
+                'class': 'materialize-textarea',
                 'data-field-type': 'textarea',
                 'data_parent': details_parent
             }),
             'tags': forms.TextInput(attrs={
-                'type': 'text',
+                'class': 'input',
                 'data-field-type': 'text',
                 'autocomplete': 'off',
-                'data_parent': tags_parent
+                'data_parent': tags_parent,
+                'extra': {'chip': True, 'close': "<i class='close material-icons'>close</i>"}
             }),
         }
 
